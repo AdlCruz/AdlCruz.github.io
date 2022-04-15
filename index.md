@@ -6,7 +6,7 @@ _Research Assistant in Health Data Science, Department of Social & Environmental
 
 ### Reach me at:   
 
-<Arturo.de.la.Cruz_Libardi>  
+<Arturo.de.la.Cruz_Libardi@lshtm.ac.uk>  
 [@dlCruzArturo](https://twitter.com/dlCruzArturo)   
 [git AdlCruz](https://github.com/AdlCruz) 
 
