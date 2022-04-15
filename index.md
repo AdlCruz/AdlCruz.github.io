@@ -6,7 +6,7 @@
 
 ---
 
-_Research Assistant in Health Data Science,_<br />  
+_Research Assistant in Health Data Science,_<br />
 _Department of Social & Environmental Health Research_<br /> 
 _London School of Hygiene and Tropical Medicine_<br /> 
 
