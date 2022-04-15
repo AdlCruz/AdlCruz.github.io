@@ -34,6 +34,6 @@ _London School of Hygiene and Tropical Medicine_<br />
 
 ---
 
-- Environmental Epidemiology 
-- Air Quality Modelling for Health Applications 
-- R, Free Software Principles, Open Science, Science-Fiction, Rational Optimism...
+* Environmental Epidemiology 
+* Air Quality Modelling for Health Applications 
+* R, Free Software Principles, Open Science, Science-Fiction, Rational Optimism...
