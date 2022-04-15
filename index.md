@@ -12,13 +12,13 @@ _Research Assistant in Health Data Science, Department of Social & Environmental
 
 ## Projects 
 
-> **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database** 
-> [rctapi](https://github.com/AdlCruz/rctapi) - makes possible searching filtering and downloading 
-> [rctexplorer](https://github.com/AdlCruz/rctexplorer) - feeds data into bespoke shiny app for filtering, plotting and further exploration 
+> **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**  
+> [rctapi](https://github.com/AdlCruz/rctapi) - makes possible searching filtering and downloading   
+> [rctexplorer](https://github.com/AdlCruz/rctexplorer) - feeds data into bespoke shiny app for filtering, plotting and further exploration   
 
-> **Student Dissertations** adding soon
-> Health Data Science 
-> BSc Neuroscience
+> **Student Dissertations** adding soon  
+> Health Data Science   
+> BSc Neuroscience  
 
 ## Interests 
 
