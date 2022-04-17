@@ -2,7 +2,7 @@
 
 ---
 
-## Academic and Professional Address - [Personal Address](https://ihavetodothisifnot.wordpress.com/)
+## Academic and Professional Address - [Personal Address](https://ihavetodothisifnot.wordpress.com/) {.tabset}
 
 ---
 
