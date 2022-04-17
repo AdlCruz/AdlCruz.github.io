@@ -1,14 +1,7 @@
-title: "
-email: Arturo.de.la.Cruz_Libardi@lshtm.ac.uk
-description: >- # this means to ignore newlines until "baseurl:"
-  You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dlCruzArturo
-github_username:  AdlCruz
+title: Website
+description: Personal Academic adn professional Website
 
+theme: jekyll-theme-hacker
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
