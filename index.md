@@ -3,13 +3,13 @@
 
 ------------------------------------------------------------------------
 
-## Academic and Professional Address - [Personal Address](https://ihavetodothisifnot.wordpress.com/) {.tabset .tabset-pills}
+## Academic and Professional Address - [Personal Address](https://ihavetodothisifnot.wordpress.com/)
 
 ------------------------------------------------------------------------
 
-*Research Assistant in Health Data Science,*\
+*Research Assistant in Health Data Science,*
 
-*Department of Social & Environmental Health Research,*\
+*Department of Social & Environmental Health Research,*
 
 *London School of Hygiene and Tropical Medicine*
 
@@ -40,5 +40,3 @@
 -   Environmental Epidemiology
 -   Air Quality Modelling for Health Applications
 -   R, Remote Sensing, Open Science, Free Software Principles, Science-Fiction, Rational Optimism...
-
-##  {.unnumbered}
