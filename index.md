@@ -13,17 +13,17 @@
 
 *London School of Hygiene and Tropical Medicine*
 
-### Contact
-
 ------------------------------------------------------------------------
+
+### Contact
 
 [Arturo.de.la.Cruz_Libardi@lshtm.ac.uk](mailto:Arturo.de.la.Cruz_Libardi@lshtm.ac.uk)\
 [@dlCruzArturo](https://twitter.com/dlCruzArturo)\
 [git AdlCruz](https://github.com/AdlCruz)
 
-### Projects
-
 ------------------------------------------------------------------------
+
+### Projects
 
 > **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
 > [rctapi](https://github.com/AdlCruz/rctapi) - makes possible searching filtering and downloading\
@@ -33,9 +33,9 @@
 > MSc Health Data Science\
 > BSc Neuroscience
 
-### Interests
-
 ------------------------------------------------------------------------
+
+### Interests
 
 -   Environmental Epidemiology
 -   Air Quality Modelling for Health Applications
