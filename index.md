@@ -1,39 +1,44 @@
+
 # Arturo de la Cruz Libardi
 
----
+------------------------------------------------------------------------
 
-## Academic and Professional Address - [Personal Address](https://ihavetodothisifnot.wordpress.com/){.tabset}
+## Academic and Professional Address - [Personal Address](https://ihavetodothisifnot.wordpress.com/) {.tabset .tabset-pills}
 
----
+------------------------------------------------------------------------
 
-_Research Assistant in Health Data Science,_<br />
-_Department of Social & Environmental Health Research_<br /> 
-_London School of Hygiene and Tropical Medicine_<br /> 
+*Research Assistant in Health Data Science,*\
 
-### Reach me at:   
+*Department of Social & Environmental Health Research,*\
 
----
+*London School of Hygiene and Tropical Medicine*\
 
-<Arturo.de.la.Cruz_Libardi@lshtm.ac.uk>  
-[@dlCruzArturo](https://twitter.com/dlCruzArturo)   
-[git AdlCruz](https://github.com/AdlCruz) 
+### Contact
 
-## Projects 
+------------------------------------------------------------------------
 
----
+[Arturo.de.la.Cruz_Libardi\@lshtm.ac.uk](mailto:Arturo.de.la.Cruz_Libardi@lshtm.ac.uk){.email}\
+[\@dlCruzArturo](https://twitter.com/dlCruzArturo)\
+[git AdlCruz](https://github.com/AdlCruz)
 
-> **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**  
-> [rctapi](https://github.com/AdlCruz/rctapi) - makes possible searching filtering and downloading   
-> [rctexplorer](https://github.com/AdlCruz/rctexplorer) - feeds data into bespoke shiny app for filtering, plotting and further exploration   
+### Projects
 
-> **Student Dissertations** adding soon  
-> MSc Health Data Science   
-> BSc Neuroscience  
+------------------------------------------------------------------------
 
-## Interests 
+> **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
+> [rctapi](https://github.com/AdlCruz/rctapi) - makes possible searching filtering and downloading\
+> [rctexplorer](https://github.com/AdlCruz/rctexplorer) - feeds data into bespoke shiny app for filtering, plotting and further exploration
 
----
+> **Student Dissertations** coming soon\
+> MSc Health Data Science\
+> BSc Neuroscience\
 
-* Environmental Epidemiology 
-* Air Quality Modelling for Health Applications 
-* R, Remote Sensing, Open Science, Free Software Principles,  Science-Fiction, Rational Optimism...
+### Interests
+
+------------------------------------------------------------------------
+
+-   Environmental Epidemiology
+-   Air Quality Modelling for Health Applications
+-   R, Remote Sensing, Open Science, Free Software Principles, Science-Fiction, Rational Optimism...
+
+##  {.unnumbered}
