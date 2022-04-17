@@ -1,12 +1,3 @@
----
-title: "website"
-author: "Arturo de la Cruz"
-date: '2022-04-17'
-output: 
-  html_document:
-   toc: true
-   toc_float: true
----
 
 # Arturo de la Cruz Libardid
 
@@ -20,14 +11,14 @@ output:
 
 *Department of Social & Environmental Health Research,*\
 
-*London School of Hygiene and Tropical Medicine*\
+*London School of Hygiene and Tropical Medicine*
 
 ### Contact
 
 ------------------------------------------------------------------------
 
 [Arturo.de.la.Cruz_Libardi\@lshtm.ac.uk](mailto:Arturo.de.la.Cruz_Libardi@lshtm.ac.uk){.email}\
-[\@dlCruzArturo](https://twitter.com/dlCruzArturo)\
+[@dlCruzArturo](https://twitter.com/dlCruzArturo)\
 [git AdlCruz](https://github.com/AdlCruz)
 
 ### Projects
