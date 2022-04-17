@@ -17,7 +17,7 @@
 
 ------------------------------------------------------------------------
 
-[Arturo.de.la.Cruz_Libardi\@lshtm.ac.uk](mailto:Arturo.de.la.Cruz_Libardi@lshtm.ac.uk)\
+[Arturo.de.la.Cruz_Libardi@lshtm.ac.uk](mailto:Arturo.de.la.Cruz_Libardi@lshtm.ac.uk)\
 [@dlCruzArturo](https://twitter.com/dlCruzArturo)\
 [git AdlCruz](https://github.com/AdlCruz)
 
