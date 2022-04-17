@@ -1,5 +1,5 @@
 
-# Arturo de la Cruz Libardid
+# Arturo de la Cruz Libardi
 
 ------------------------------------------------------------------------
 
@@ -31,7 +31,7 @@
 
 > **Student Dissertations** coming soon\
 > MSc Health Data Science\
-> BSc Neuroscience\
+> BSc Neuroscience
 
 ### Interests
 
