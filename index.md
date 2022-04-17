@@ -27,7 +27,7 @@ _London School of Hygiene and Tropical Medicine_<br />
 > [rctexplorer](https://github.com/AdlCruz/rctexplorer) - feeds data into bespoke shiny app for filtering, plotting and further exploration   
 
 > **Student Dissertations** adding soon  
-> Health Data Science   
+> MSc Health Data Science   
 > BSc Neuroscience  
 
 ## Interests 
