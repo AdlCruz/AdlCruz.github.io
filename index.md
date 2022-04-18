@@ -32,6 +32,7 @@
 > [rctapi](https://github.com/AdlCruz/rctapi) - search filter and download records\
 > [rctexplorer](https://github.com/AdlCruz/rctexplorer) - load data to R shiny app for interactive plotting and further exploration\
 > [![Watch Package Demo](/assets/thumbnailvimeo.jpg)](https://vimeo.com/595343322 "seven minutes until you're exploring ct.gov from your console. Click to Watch!")
+> .<sub>click the image to go to the tutorial video</sub>
 
 
 > **Student Dissertations**\
