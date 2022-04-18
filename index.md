@@ -25,7 +25,7 @@
 ------------------------------------------------------------------------
 
 ### Projects
-> **select local raster files and view them over a worlmap**\
+> **select local raster files and view them over a worldmap**\
 > [raster_viewer](https://github.com/AdlCruz/raster_viewer) is enabled by Shiny and Leaflet.
 
 > **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
@@ -36,7 +36,9 @@
 
 > **Student Dissertations** coming soon\
 > MSc Health Data Science\
-> BSc Neuroscience
+> []()
+> BSc Neuroscience, 2016.\
+> [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](/assets/lrpbsckcl.pdf)
 
 ------------------------------------------------------------------------
 
