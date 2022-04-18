@@ -29,8 +29,8 @@
 > [raster_viewer](https://github.com/AdlCruz/raster_viewer) is enabled by Shiny and Leaflet.
 
 > **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
-> [rctapi](https://github.com/AdlCruz/rctapi) - makes possible searching filtering and downloading from R\
-> [rctexplorer](https://github.com/AdlCruz/rctexplorer) - feeds data into an R shiny app/dashboard for filtering, plotting and further exploration\
+> [rctapi](https://github.com/AdlCruz/rctapi) - makes possible searching filtering and downloading data from R\
+> [rctexplorer](https://github.com/AdlCruz/rctexplorer) - imports data to R shiny app for interactive filtering, plotting and further exploration\
 > [![Watch Package Demo](/assets/thumbnailvimeo.jpg)](https://vimeo.com/595343322 "seven minutes until you're exploring ct.gov from your console. Click to Watch!")
 
 
