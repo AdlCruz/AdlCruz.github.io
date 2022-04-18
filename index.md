@@ -31,7 +31,7 @@
 > **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
 > [rctapi](https://github.com/AdlCruz/rctapi) - makes possible searching filtering and downloading\
 > [rctexplorer](https://github.com/AdlCruz/rctexplorer) - feeds data into bespoke shiny app for filtering, plotting and further exploration\
-> [![Packages Demo](/_assets/thumbnailvimeo.jpg)](https://vimeo.com/595343322 "seven minutes until you're exploring ct.gov from your console. Click to Watch!"){width=250}
+> [![Packages Demo](/_assets/thumbnailvimeo.jpg){width=250}](https://vimeo.com/595343322 "seven minutes until you're exploring ct.gov from your console. Click to Watch!")
 
 > **Student Dissertations** coming soon\
 > MSc Health Data Science\
