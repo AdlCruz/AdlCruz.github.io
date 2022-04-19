@@ -47,7 +47,7 @@
 
 -   Environmental Epidemiology
 -   Air Quality Modelling for Health Applications
--   R, Remote Sensing, Open Science, Free Software Principles, [Casual Reading](/assets/books-rmd.html), Rational Optimism...
+-   [R](R-page.md), Remote Sensing, Open Science, Free Software Principles, Science Fiction, Rational Optimism...
 
 -------------------------------------------------------------------------
 
