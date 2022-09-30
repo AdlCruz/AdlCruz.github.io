@@ -53,4 +53,4 @@
 
 ### More About Me
 
-My more creative output is [here](https://ihavetodothisifnot.wordpress.com/)
+Feel free to get in touch for a less formal introduction. Tell me if you come from [here](https://earth.nullschool.net/#current/wind/surface/level/orthographic=-1.36,51.83,21368/loc=-0.344,51.551).
