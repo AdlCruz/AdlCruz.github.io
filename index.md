@@ -18,7 +18,7 @@
 ### Online Presence
 
 [Arturo.de.la.Cruz_Libardi@lshtm.ac.uk](mailto:Arturo.de.la.Cruz_Libardi@lshtm.ac.uk)\
-[git AdlCruz](https://github.com/AdlCruz)\
+[github AdlCruz](https://github.com/AdlCruz)\
 [@dlCruzArturo](https://twitter.com/dlCruzArturo)
 
 
