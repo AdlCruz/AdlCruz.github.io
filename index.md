@@ -20,7 +20,7 @@
 
 ------------------------------------------------------------------------
 
-### Projects
+### Past Projects
 > **select local raster files and view them over a worldmap**\
 > [raster_viewer](https://github.com/AdlCruz/raster_viewer) is enabled by Shiny and Leaflet.
 
