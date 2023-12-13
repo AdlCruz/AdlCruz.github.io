@@ -63,5 +63,5 @@ Feel free to get in touch for a less formal introduction.
 ### Testing shiny app embedding (from shinyapps.io into this .md document and then onto github.io)
 
 ```{r out.width="100%"}
-knitr::include_app(url = "https://adlcruz.shinyapps.io/mapapppkg/", height = "800px")
+knitr::include_app(url = "https://adlcruz.shinyapps.io/hipmapp/", height = "800px")
 ```
