@@ -29,8 +29,8 @@ output: html_document
 > [raster_viewer](https://github.com/AdlCruz/raster_viewer) is enabled by Shiny and Leaflet.
 
 > **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
-> [rctapi](https://github.com/AdlCruz/rctapi) - search filter and download records\
-> [rctexplorer](https://github.com/AdlCruz/rctexplorer) - load data to R shiny app for interactive plotting and further exploration\
+> [rctapi](https://adlcruz.github.io/rctapi/) - search filter and download records\
+> [rctexplorer](https://adlcruz.github.io/rctexplorer/) - load data to R shiny app for interactive plotting and further exploration\
 
 > *Have a look at an interactive demonstration*
 
@@ -59,9 +59,3 @@ knitr::include_url(url="https://player.vimeo.com/video/595343322?h=97da0c4bb5")
 Feel free to get in touch for a less formal introduction.
 
 ------------------------------------------------------------------------
-
-### Testing shiny app embedding (from shinyapps.io into this .md document and then onto github.io)
-
-```{r out.width="100%"}
-knitr::include_app(url = "https://adlcruz.shinyapps.io/hipmapp/", height = "800px")
-```
