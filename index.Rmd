@@ -37,7 +37,7 @@ output: html_document
 knitr::include_url(url="https://player.vimeo.com/video/595343322?h=97da0c4bb5")
 ```
 
-> **Student Dissertations**\
+> **Student projects**\
 > MSc Health Data Science,\
 > [Building and testing R tools to extract and explore data from the online database ClinicalTrials.gov](/assets/deanonlshtmdiss.pdf)\
 > BSc Neuroscience,\
