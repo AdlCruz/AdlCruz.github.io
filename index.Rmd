@@ -2,7 +2,8 @@
 output: html_document
 ---
 
-<!-- Arturo de la Cruz Libardi -->
+<!-- Arturo de la Cruz Libardi 
+to continue fixing the theme do gem install jekyll-theme-hacker on a ruby terminal-->
 
 ------------------------------------------------------------------------
 
