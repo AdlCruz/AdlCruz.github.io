@@ -1,21 +1,20 @@
 ---
-title: "Welcome!"
 output: html_document
 ---
 
-### Arturo de la Cruz Libardi
+<!-- Arturo de la Cruz Libardi -->
 
 ------------------------------------------------------------------------
 
 *Research Assistant in Health Data Science,*
 
-*Department of Social & Environmental Health Research,*
+[*Environment and Health Modelling Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)
 
 *London School of Hygiene and Tropical Medicine*
 
 ------------------------------------------------------------------------
 
-### Online Presence
+### Online
 
 [Arturo.de-la-Cruz-Libardi\@lshtm.ac.uk](mailto:Arturo.de-la-Cruz-Libardi@lshtm.ac.uk)\
 [github AdlCruz](https://github.com/AdlCruz)\
@@ -23,7 +22,7 @@ output: html_document
 
 ------------------------------------------------------------------------
 
-### Past Projects
+### Projects
 
 > **select local raster files and view them over a worldmap**\
 > [raster_viewer](https://github.com/AdlCruz/raster_viewer) is enabled by Shiny and Leaflet.
