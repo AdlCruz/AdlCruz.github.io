@@ -1,63 +1,48 @@
 ---
 title: Arturo de la Cruz Libardi
-description: Feel free to zoom in
-output: html_document
+description: Zoom right down
+output: 
+  html_document: 
+    css: "style.css"
 ---
 
-<!-- Arturo de la Cruz Libardi 
-to continue fixing the theme do gem install jekyll-theme-hacker on a ruby terminal-->
+*Research Assistant in Health Data Science at the* [*Environment and Health Modelling Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)
 
-------------------------------------------------------------------------
+*Department of Public Health Environments and Society,* [*London School of Hygiene and Tropical Medicine*](https://www.lshtm.ac.uk/)
 
-*Research Assistant in Health Data Science,*
-
-[*Environment and Health Modelling Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)
-
-*London School of Hygiene and Tropical Medicine*
-
-------------------------------------------------------------------------
-
-### Online
+### Contact
 
 [Arturo.de-la-Cruz-Libardi\@lshtm.ac.uk](mailto:Arturo.de-la-Cruz-Libardi@lshtm.ac.uk)\
 [github AdlCruz](https://github.com/AdlCruz)\
 [\@dlCruzArturo](https://twitter.com/dlCruzArturo)\
 
-------------------------------------------------------------------------
-
-### Projects
-
-> **select local raster files and view them over a worldmap**\
-> [raster_viewer](https://github.com/AdlCruz/raster_viewer) is enabled by Shiny and Leaflet.
+### R packages
 
 > **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
 > [rctapi](https://adlcruz.github.io/rctapi/) - search filter and download records\
-> [rctexplorer](https://adlcruz.github.io/rctexplorer/) - load data to R shiny app for interactive plotting and further exploration\
+> [rctexplorer](https://adlcruz.github.io/rctexplorer/) - load data to R shiny app for interactive visualisation\
 
-> *Have a look at an interactive demonstration*
+> [Building and testing R tools to extract and explore data from the online database ClinicalTrials.gov](assets/deanonlshtmdiss.pdf)\
 
-```{r out.width="100%"}
+[At the local R Users Group meeting](https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0) from 8:07
+
+ <iframe src="https://lshtm-my.sharepoint.com/:p:/g/personal/lshad21_lshtm_ac_uk/EZeVC0fP3flNkjAZja8DMEcBcTH6vKPvKXT7cW5Mb51nPg?e=qWzjQm&action=embedview" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="450px" width="700px" allowfullscreen></iframe> 
+ 
+On a video hosting site
+
+```{r out.width="100%", echo=F}
 knitr::include_url(url="https://player.vimeo.com/video/595343322?h=97da0c4bb5")
 ```
 
-> **Student projects**\
-> MSc Health Data Science,\
-> [Building and testing R tools to extract and explore data from the online database ClinicalTrials.gov](/assets/deanonlshtmdiss.pdf)\
-> BSc Neuroscience,\
-> [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](/assets/lrpbsckcl.pdf)
+
+### Neuroscience literature reviews (BSc fulfilment)
+
+> [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](assets/lrpbsckcl.pdf)
 
 ------------------------------------------------------------------------
 
 ### Interests
 
--   Environmental Epidemiology
--   Air Quality Modelling for Health Applications
--   [R](R-page.md), Remote Sensing, Open Science, Free Software Principles, Science Fiction, Rational Optimism...
+-   Environmental Modelling, Epidemiology
+-   R, Open Science, Free Software Principles, Science Fiction, Rational Optimism, Hiking, Meadows, Orcas, Volleyball, Mountains, ...
 
-------------------------------------------------------------------------
-
-### More About Me
-
-Feel free to get in touch for a less formal introduction.
-
-------------------------------------------------------------------------
