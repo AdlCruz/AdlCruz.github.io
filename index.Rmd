@@ -6,9 +6,9 @@ output:
     css: "style.css"
 ---
 
-*Research Assistant in Health Data Science at the* [*Environment and Health Modelling Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)
+*Research Assistant in Health Data Science,* [*Environment and Health Modelling Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)
 
-*Department of Public Health Environments and Society,* [*London School of Hygiene and Tropical Medicine*](https://www.lshtm.ac.uk/)
+*Department of Public Health, Environments and Society,* [*London School of Hygiene and Tropical Medicine*](https://www.lshtm.ac.uk/)
 
 ### Contact
 
@@ -22,6 +22,7 @@ output:
 > [rctapi](https://adlcruz.github.io/rctapi/) - search filter and download records\
 > [rctexplorer](https://adlcruz.github.io/rctexplorer/) - load data to R shiny app for interactive visualisation\
 
+> *Comprehensive project report and use-case example*\
 > [Building and testing R tools to extract and explore data from the online database ClinicalTrials.gov](assets/deanonlshtmdiss.pdf)\
 
 [At the local R Users Group meeting](https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0) from 8:07
@@ -35,7 +36,7 @@ knitr::include_url(url="https://player.vimeo.com/video/595343322?h=97da0c4bb5")
 ```
 
 
-### Neuroscience literature reviews (BSc fulfilment)
+### Neuroscience literature review (BSc fulfilment)
 
 > [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](assets/lrpbsckcl.pdf)
 
