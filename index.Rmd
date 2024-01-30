@@ -10,6 +10,10 @@ output:
 
 *Department of Public Health, Environments and Society,* [*London School of Hygiene and Tropical Medicine*](https://www.lshtm.ac.uk/)
 
+### Profile and publications
+
+[Here (profile)](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo) and [here (publications)](https://orcid.org/0009-0001-1543-7999)
+
 ### Contact
 
 [Arturo.de-la-Cruz-Libardi\@lshtm.ac.uk](mailto:Arturo.de-la-Cruz-Libardi@lshtm.ac.uk)\
@@ -25,16 +29,17 @@ output:
 > *Comprehensive project report and use-case example*\
 > [Building and testing R tools to extract and explore data from the online database ClinicalTrials.gov](assets/deanonlshtmdiss.pdf)\
 
-[At the local R Users Group meeting](https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0) from 8:07
+Rctapi and rctexplorer at the local R Users Group meeting [from 8:07]((https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0)), just the slides as [dynamic carousel](rct_presentation.html) or [static pdf](assets/RUG_18Nov22_rct_presentation.pdf).
 
- <!-- <iframe src="https://lshtm-my.sharepoint.com/:p:/g/personal/lshad21_lshtm_ac_uk/EZeVC0fP3flNkjAZja8DMEcBcTH6vKPvKXT7cW5Mb51nPg?e=qWzjQm&action=embedview" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="450px" width="700px" allowfullscreen></iframe>  -->
- 
-On a video hosting site
+[Video demonstration on Vimeo](https://player.vimeo.com/video/595343322?h=97da0c4bb5).
 
-```{r out.width="100%", echo=F}
-knitr::include_url(url="https://player.vimeo.com/video/595343322?h=97da0c4bb5")
-```
+<!-- On a video hosting site -->
 
+<!-- # ```{r out.width="100%", echo=F} -->
+
+<!-- # knitr::include_url(url="https://player.vimeo.com/video/595343322?h=97da0c4bb5") -->
+
+<!-- # ``` -->
 
 ### Neuroscience literature review (BSc fulfilment)
 
@@ -46,4 +51,3 @@ knitr::include_url(url="https://player.vimeo.com/video/595343322?h=97da0c4bb5")
 
 -   Environmental Modelling, Epidemiology
 -   R, Open Science, Free Software Principles, Science Fiction, Rational Optimism, Hiking, Meadows, Orcas, Volleyball, Mountains, ...
-
