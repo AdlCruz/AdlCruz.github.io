@@ -27,7 +27,7 @@ output:
 
 [At the local R Users Group meeting](https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0) from 8:07
 
- <iframe src="https://lshtm-my.sharepoint.com/:p:/g/personal/lshad21_lshtm_ac_uk/EZeVC0fP3flNkjAZja8DMEcBcTH6vKPvKXT7cW5Mb51nPg?e=qWzjQm&action=embedview" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="450px" width="700px" allowfullscreen></iframe> 
+ <!-- <iframe src="https://lshtm-my.sharepoint.com/:p:/g/personal/lshad21_lshtm_ac_uk/EZeVC0fP3flNkjAZja8DMEcBcTH6vKPvKXT7cW5Mb51nPg?e=qWzjQm&action=embedview" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="450px" width="700px" allowfullscreen></iframe>  -->
  
 On a video hosting site
 
