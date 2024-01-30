@@ -2,7 +2,7 @@
 title: RUG presentation slides
 output: 
   html_document:
-    css: "style.css"
+    css: "style_pres.css"
 ---
 ```{r echo=  FALSE}
 knitr::opts_chunk$set(echo=FALSE)
@@ -13,7 +13,8 @@ library(htmlwidgets)
 library(slickR)
 ```
 
-Powered by `htmlwidgets` and `slickR`
+Powered by `htmlwidgets` and `slickR`.
+
 Back to [the main page](index.html)
 
 ```{r}
