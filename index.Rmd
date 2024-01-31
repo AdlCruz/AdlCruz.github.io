@@ -6,7 +6,7 @@ output:
     css: "style.css"
 ---
 
-*Research Assistant in Health Data Science,* [*Environment and Health Modelling Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)
+*Research Assistant in Health Data Science,* [*Environment and Health Modelling (EHM) Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)
 
 *Department of Public Health, Environments and Society,* [*London School of Hygiene and Tropical Medicine*](https://www.lshtm.ac.uk/)
 
