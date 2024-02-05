@@ -4,7 +4,7 @@ output:
   html_document:
     css: "style_pres.css"
 ---
-```{r echo=  FALSE}
+```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE)
 ```
 

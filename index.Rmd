@@ -5,6 +5,14 @@ output:
   html_document: 
     css: "style.css"
 ---
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+library(rmarkdown);library(markdown);library(htmltools)
+```
+
+```{r}
+htmltools::HTML("<hr>")
+```
 
 *Research Assistant in Health Data Science,* [*Environment and Health Modelling (EHM) Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)
 
@@ -20,6 +28,10 @@ output:
 [github AdlCruz](https://github.com/AdlCruz)\
 [\@dlCruzArturo](https://twitter.com/dlCruzArturo)\
 
+```{r}
+htmltools::HTML("<hr>")
+```
+
 ### R packages
 
 > **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
@@ -33,19 +45,17 @@ Rctapi and rctexplorer at the local R Users Group meeting [from 8:07]((https://l
 
 [Video demonstration on Vimeo](https://player.vimeo.com/video/595343322?h=97da0c4bb5).
 
-<!-- On a video hosting site -->
-
-<!-- # ```{r out.width="100%", echo=F} -->
-
-<!-- # knitr::include_url(url="https://player.vimeo.com/video/595343322?h=97da0c4bb5") -->
-
-<!-- # ``` -->
+```{r}
+htmltools::HTML("<hr>")
+```
 
 ### Neuroscience literature review (BSc fulfilment)
 
 > [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](assets/lrpbsckcl.pdf)
 
-------------------------------------------------------------------------
+```{r}
+htmltools::HTML("<hr>")
+```
 
 ### Interests
 
