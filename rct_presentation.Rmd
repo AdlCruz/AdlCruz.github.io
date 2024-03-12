@@ -2,20 +2,20 @@
 title: RUG presentation slides
 output: 
   html_document:
-    css: "style_pres.css"
+    css: "style.css"
 ---
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE)
 ```
 
 ```{r}
-library(htmlwidgets)
-library(slickR)
+library(htmlwidgets); library(slickR)
 ```
+
+Back to [the main page](index.html)
 
 Powered by `htmlwidgets` and `slickR`.
 
-Back to [the main page](index.html)
 
 ```{r}
 cP1 <- htmlwidgets::JS('function(slick,index) {

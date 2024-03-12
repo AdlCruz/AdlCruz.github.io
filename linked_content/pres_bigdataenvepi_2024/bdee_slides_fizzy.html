@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Big data in   environmental epidemiology</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Arturo de la Cruz Libardi" />
+    <meta name="date" content="2024-03-12" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link href="libs/xaringanExtra-banner/banner.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-banner/banner.js"></script>
+    <link rel="stylesheet" href="extra-styles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+name: seal
+class: seal, center, middle,  hide_logo, no-scribble
+background-image: url("img/bg-seal.jpg")
+background-position: center
+background-size: contain
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(img/logo.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:29em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div><script>document.addEventListener('DOMContentLoaded',function(){new xeBanner(JSON.parse('{"left":"","right":"14/03/2024","exclude":["seal"],"position":"top"}'))})</script>
+<script>document.addEventListener('DOMContentLoaded',function(){new xeBanner(JSON.parse('{"left":"Big data in environmental epidemiology","right":"","exclude":["seal"],"position":"bottom"}'))})</script><style>:root {
+  --xe-banner-fg: white;
+  --xe-banner-bg: #2ba96c;
+}</style><style>.title {
+  --xe-banner-fg: white;
+  --xe-banner-bg: white;
+  --xe-banner-height: 20%;
+}</style>
+
+&lt;style type="text/css"&gt;
+.highlight-last-item &gt; ul &gt; li,
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+&lt;/style&gt;
+
+
+
+# London School of Hygiene &lt;br&gt; and Tropical Medicine
+
+## Improving Health Worldwide
+
+---
+name: title
+class: left, middle,  title, lshtm-blue, no-scribble
+
+# Big data in &lt;br&gt; environmental epidemiology
+
+## 
+
+### Arturo de la Cruz Libardi
+
+### Environment and Health Modelling (EHM) Lab&lt;br&gt;London School of Hygiene and Tropical Medicine
+
+### 2024-03-12
+
+???
+
+We have some notes over here.
+
+---
+name: ilo
+class: no-scribble
+
+# intended learning outcomes
+
+## by the end of this session, you will be able to:
+
+### 1. Critically define big data
+### 2. Describe some implications and applications of big data in public health and epidemiology
+### 3. Evaluate sources of big health and environmental data
+### 4. Explain why and how environmental and health data are linked
+
+---
+name: the-toc
+
+# table of contents
+
+&lt;!-- - [intended learning outcomes](#ilo)  --&gt;
+&lt;!-- - [session structure](#session-structure) --&gt;
+&lt;!-- - [lecture outline](#lecture-outline) --&gt;
+&lt;!-- - [motivation](#motivation) --&gt;
+&lt;!-- - [brief-history](#brief-history) --&gt;
+&lt;!-- - [big-def](#big-def ) --&gt;
+&lt;!-- - [big-terms](#big-terms) --&gt;
+&lt;!-- - [big-trends](#big-trends) --&gt;
+&lt;!-- - [implications](#implications) --&gt;
+&lt;!-- - [big-chall](#big-chall) --&gt;
+&lt;!-- - [big-app-ex](#big-app-ex) --&gt;
+&lt;!-- - [bigh-ex](#bigh-ex) --&gt;
+&lt;!-- - [bige-ex](#bige-ex) --&gt;
+&lt;!-- - [big-env-concept](#big-env-concept) --&gt;
+&lt;!-- - [datlink-types](#datlink-types) --&gt;
+&lt;!-- - [stuk](#stuk) --&gt;
+&lt;!-- - [lhem](#lhem) --&gt;
+&lt;!-- - [recap](#recap) --&gt;
+&lt;!-- - [citizenship](#citizenship) --&gt;
+&lt;!-- - [ref-source](#ref-source) --&gt;
+
+
+- [intended learning outcomes](#ilo)
+- [table of contents](#the-toc)
+- [session structure](#session-structure)
+- [lecture outline](#lecture-outline)
+- [very brief history](#brief-history)
+- [the data line](#big-def)
+- [specialized infrastructure, pipelines and jargon](#big-terms)
+- [concurrent global trends](#big-trends)
+- [and technological developments](#big-trends)
+- [implications](#big-trends)
+- [big data in epidemiology](#big-chall)
+- [applications in public health and research](#big-app-ex)
+- [big health data](#bigh-ex)
+- [big environmental data](#bige-ex)
+- [how do big health and environmental data .synerg[synergize]](#big-env-concept)
+- [from data to exposure](#datlink-types)
+- [we have learned to](#recap)
+- [references](#ref-source)
+- [suggestions](#citizenship)
+
+---
+name: session-structure
+class: no-scribble
+
+# session structure
+
+.pull-left[
+## lecture
+## questions
+## discussion
+]
+
+.pull-right[
+## demonstration
+## discussion
+]
+
+---
+name: lecture-outline
+class: no-scribble
+
+# lecture outline
+
+#### 1. **motivation**
+  - big data &amp;rarr; epidemiology &amp;rarr; public health
+  - brief history
+  
+#### 2. **big data**
+  - definitions
+  - trends and implications
+  - epidemiology
+  - applications
+  
+#### 3. **health and environmental data**
+  - source examples
+  - harmonization
+  - exposure assessment
+  - examples
+
+---
+name: motivation
+class: center, middle, highlight-last-item
+
+motivation
+
+--
+
+### big data &amp;rarr; epidemiology &amp;rarr; public health
+
+---
+name: brief-history
+class: no-scribble
+
+# very brief history
+
+#### integration of subject matter knowledge, (large scale) data, and analysis
+
+#### enabled by technology, .red[creativity], individual and collective effort
+
+#### from weekly burial counts (1662) to 180k cohort (1952)
+
+#### ink and paper, death certificates, punch-cards, telephone...
+
+---
+name: big-def
+
+# the data line
+
+.pull-left[
+## big data
+
+### Variety
+
+### Volume
+
+### Velocity
+]
+
+--
+
+.pull-right[
+## everything else(?)
+
+### works on your machine
+]
+
+--
+
+.class-q[_more V's?_&lt;br&gt;&lt;br&gt;_is it just about data?_]
+
+
+---
+name: big-terms
+
+
+# specialized infrastructure, pipelines and jargon
+
+Data - oceans, lakes, warehouses, bases
+
+&lt;img src="img/gad_21.png" width="60%" height="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[Gadekallu, Pham, Huynh-The et al. [1]]
+
+
+---
+name: big-trends
+
+# concurrent global trends 
+
+- ageing population - urbanization (demographic change)
+
+- environmentally complex climate change
+
+--
+
+# and technological developments
+
+- powerful unknowable functions (machine-learning)
+
+- smart(ish), cheap(er) and .red[pervasive monitoring]
+
+--
+
+# implications
+
+- different training and emphasis
+
+- widened research opportunities
+
+---
+name: big-chall
+
+# big data in epidemiology
+
+### Variety - measurement error, confounding etc...
+
+### Volume - research questions, wide and tall datasets, computational efficiency
+
+### Velocity - highest impact potential, most dependent on infrastructure
+
+--
+
+.class-q[_anything else?_]
+
+---
+name: big-app-ex
+
+# applications in public health and research
+
+- COVID-19 response (many applications)
+
+- Healthcare administration (logistics)
+
+- Research (EHRs, wide and complex analyses)
+
+- [In references](#ref-source)
+
+
+---
+name: bigh-ex
+
+# big health data
+
+.pull-left[
+- [ProjectTycho](https://www.tycho.pitt.edu/)
+
+- [BioBank](https://www.ukbiobank.ac.uk/)
+
+- [CPRD](https://cprd.com/)
+
+- [OurFutureHealth](https://ourfuturehealth.org.uk/)
+]
+
+--
+.pull-right[
+&lt;img src="img/hdsize_Tonne2017.png" width="100%" height="100%" /&gt;
+]
+
+.footnote[
+Tonne, Basagaña, Chaix et al. [2]
+]
+
+---
+name: bige-ex
+
+
+# big environmental data* 
+
+- raster vs vector
+
+- modelled: atmospheric dispersion models, reanalysis, digital twins
+
+- raw:  ground monitors, mobile sensors, satellites
+
+--
+
+.pull-left[
+&lt;img src="img/daily_pollen_longer_div.gif" width="50%" height="50%" /&gt;
+]
+
+.pull-right[
+
+&lt;img src="img/satsearch.png" width="100%" height="100%" /&gt;
+]
+
+.footnote[
+
+*some environmental data will already be part of EHRs
+
+** [figure from: https://search.earthdata.nasa.gov](https://search.earthdata.nasa.gov)
+
+]
+
+
+---
+name: big-env-concept
+
+# how do big health and environmental data .synerg[synergize]
+
+1. research question
+
+1. **get data**
+
+1. **prepare data**
+
+1. .red[**link health and exposures**]
+
+1. analyse
+
+---
+name: datlink-types
+
+# from data to exposure
+
+--
+.pull-left[
+### Data preparation 
+]
+--
+.pull-right[
+### Linkage
+]
+--
+.pull-left[
+  (complexity)
+  
+  (none) &amp;rarr; continuous modelled output
+
+  (simple) &amp;rarr; inverse distance weighted surface from point
+
+  (complex) &amp;rarr; multi-stage SPT ML Ensemble predictive modelling
+
+]
+--
+.pull-right[
+
+(simple) &amp;rarr; matching nearest
+
+(medium) &amp;rarr; aggregate over small area
+
+(medium) &amp;rarr; from more than one coordinates (with bilinear interpolation) [3]
+
+(complex) &amp;rarr; from a trajectory accounting for microenvironments [4]
+
+]
+
+&lt;!-- .class-q[_this would be a good moment for a question_] --&gt;
+
+.footnote[
+Vanoli, Mistry, De La Cruz Libardi et al. [3]
+Smith, Mitsakou, Kitwiroon et al. [4]
+]
+---
+
+---
+name: stuk
+
+## A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [5]
+
+
+&lt;img src="img/schne_1.png" width="33%" height="100%" /&gt;&lt;img src="img/schne_2.png" width="33%" height="100%" /&gt;&lt;img src="img/schne_3.png" width="33%" height="100%" /&gt;
+
+
+.footnote[Schneider, Vicedo-Cabrera, Sera et al. [5]]
+
+---
+name: lhem
+
+## London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [4]
+
+&gt;  ...the London Hybrid Exposure Model (LHEM), (...) calculates exposure of the Greater London population to outdoor air pollution sources, in-buildings, in-vehicles, and outdoors, using survey data of when and where people spend their time.
+
+- London Travel Demand Survey, trip route simulation
+
+&gt; Exposure to outdoor air pollution was provided by CMAQ-urban, which couples the Weather Research and Forecasting (WRF) meteorological model, the Community Multiscale Air Quality (CMAQ) regional scale model, and the Atmospheric Dispersion Modeling System (ADMS) roads model
+
+- I/O ratio for indoor air levels
+
+- for in-vehicle levels: `\(\frac{dC_{in}}{dt}=\lambda_{in}(C_{out}-C_{in})-n\lambda _{HVAV}\cdot C_{in}-V_{g}(\frac {A^{*}}{V})\cdot C_{in}+\frac {Q}{V}\)`
+
+- constant value for the underground
+
+- **"microenvironments"**
+
+.footnote[Smith, Mitsakou, Kitwiroon et al. [4]]
+---
+
+
+&lt;iframe width="404" height="228" src="https://silam.fmi.fi/pollen.html?parameter=alder&amp;region=europe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="width:100%; height:100%;" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+trajectory + exposure surface
+
+---
+name: recap
+
+# we have learned to
+
+### 1. Critically define big data as .red[big data processes]
+### 2. Describe some implications and applications of big data in public health and epidemiology
+- **classical .red[(measurement error, confounding)] challenges**
+- **new .red[(comprehensive health data, real-time action)] opportunities**
+
+### 3. Evaluate sources of big health and environmental data
+- **health .red[genetic data, EHRs, wearable sensors]**
+- **environment .red[reanalyses, satellite, ground sensors]**
+
+### 4. Explain why and how environmental and health data are linked
+- **depends on .red[nature of health data] and .red[resolution of environmental data]**
+
+---
+name: break
+class: center, middle
+
+# end of part 1
+
+---
+name: ref-source
+class: left,top, no-scribble
+
+# references
+
+[1] T. R. Gadekallu, Q. Pham, T. Huynh-The, et al. _Federated Learning for Big Data: A Survey on
+Opportunities, Applications, and Future Directions_. En. 2021.
+
+[2] C. Tonne, X. Basaga&lt;U+00F1&gt;a, B. Chaix, et al. "New frontiers for environmental epidemiology in
+a changing world". In: _Environment International_ 104 (Jul. 2017), pp. 155-162. ISSN: 0160-4120.
+DOI: [10.1016/j.envint.2017.04.003](https://doi.org/10.1016%2Fj.envint.2017.04.003). URL:
+[https://www.sciencedirect.com/science/article/pii/S0160412017301459](https://www.sciencedirect.com/science/article/pii/S0160412017301459)
+(visited on 02/15/2024).
+
+[3] J. Vanoli, M. N. Mistry, A. De La Cruz Libardi, et al. "Reconstructing individual-level
+exposures in cohort analyses of environmental risks: an example with the UK Biobank". En. In:
+_Journal of Exposure Science &amp; Environmental Epidemiology_ (Jan. 2024). ISSN: 1559-0631, 1559-064X.
+DOI: [10.1038/s41370-023-00635-w](https://doi.org/10.1038%2Fs41370-023-00635-w). URL:
+[https://www.nature.com/articles/s41370-023-00635-w](https://www.nature.com/articles/s41370-023-00635-w)
+(visited on 03/10/2024).
+
+[4] J. D. Smith, C. Mitsakou, N. Kitwiroon, et al. "London Hybrid Exposure Model: Improving Human
+Exposure Estimates to NO2 and PM2.5 in an Urban Setting". En. In: _Environmental Science &amp;
+Technology_ 50.21 (Nov. 2016), pp. 11760-11768. ISSN: 0013-936X, 1520-5851. DOI:
+[10.1021/acs.est.6b01817](https://doi.org/10.1021%2Facs.est.6b01817). URL:
+[https://pubs.acs.org/doi/10.1021/acs.est.6b01817](https://pubs.acs.org/doi/10.1021/acs.est.6b01817)
+(visited on 02/02/2023).
+
+---
+name: ref-source
+class: left,top, no-scribble
+
+# references
+
+[5] R. Schneider, A. Vicedo-Cabrera, F. Sera, et al. "A Satellite-Based Spatio-Temporal Machine
+Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain". En. In: _Remote
+Sensing_ 12.22 (Nov. 2020), p. 3803. ISSN: 2072-4292. DOI:
+[10.3390/rs12223803](https://doi.org/10.3390%2Frs12223803). URL:
+[https://www.mdpi.com/2072-4292/12/22/3803](https://www.mdpi.com/2072-4292/12/22/3803) (visited on
+02/03/2022).
+
+---
+name: R-resources
+class: middle, no-scribble
+
+Presentation made with [xaringan](https://slides.yihui.org/xaringan/#1) in RStudio.
+
+---
+name: citizenship
+class: highlight-last-item
+
+# suggestions?
+
+--
+
+- DASH 26th March opening event
+
+--
+
+- hundreds of hours of free and open resources
+
+--
+
+- a lot of local and global circumstances to improve
+
+---
+name: break
+class: center, middle
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"yolo": false,
+"highlightStyle": "github",
+"highlightLines": true,
+"slideNumberFormat": "%current%",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

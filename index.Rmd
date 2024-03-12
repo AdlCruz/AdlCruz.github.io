@@ -3,7 +3,7 @@ title: Arturo de la Cruz Libardi
 description: Zoom right down
 output: 
   html_document: 
-    css: "style.css"
+    css: "frontpage.css"
 ---
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE)
@@ -27,6 +27,8 @@ htmltools::HTML("<hr>")
 [Arturo.de-la-Cruz-Libardi\@lshtm.ac.uk](mailto:Arturo.de-la-Cruz-Libardi@lshtm.ac.uk)\
 [github AdlCruz](https://github.com/AdlCruz)\
 [\@dlCruzArturo](https://twitter.com/dlCruzArturo)\
+
+### ["Local" Links Link](linked_content.html)
 
 ```{r}
 htmltools::HTML("<hr>")
