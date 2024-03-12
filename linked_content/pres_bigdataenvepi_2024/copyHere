@@ -1,6 +1,9 @@
-slides html
-extra-styles
-libs
-img
+
+slides.html
+
+extra-styles.css
+
+libs/dir
+img/dir
+
 myBib.bib
-the-TOC.Rm
