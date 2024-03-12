@@ -86,6 +86,10 @@ top:29em;right:1em;
 
 ## Improving Health Worldwide
 
+???
+
+The first slide
+
 ---
 name: title
 class: left, middle,  title, lshtm-blue, no-scribble
@@ -102,7 +106,12 @@ class: left, middle,  title, lshtm-blue, no-scribble
 
 ???
 
-We have some notes over here.
+Presenter: Arturo, Research Assistant, Environmental Health Monitoring Lab, TP building
+
+Context: just another lecture for you - many lecture by many experts in this module - first lecture and instruction presentation preparing from scratch - for his birthday
+
+Personal aim: will try to cover the topic and leave you with the view at the very least that this is a far-reaching subject matter
+worth making use of
 
 ---
 name: ilo
@@ -117,35 +126,23 @@ class: no-scribble
 ### 3. Evaluate sources of big health and environmental data
 ### 4. Explain why and how environmental and health data are linked
 
+???
+
+This is what I think you will be able to do, let us get on with it
+
+Critically examine the concept of "big data" in general and its relevance to public health and epidemiology
+
+Evaluate different sources of big data, encompassing health and environmental data
+
+Explain the significance and methods of linking environmental and health data. 
+
 ---
 name: the-toc
 
 # table of contents
 
-&lt;!-- - [intended learning outcomes](#ilo)  --&gt;
-&lt;!-- - [session structure](#session-structure) --&gt;
-&lt;!-- - [lecture outline](#lecture-outline) --&gt;
-&lt;!-- - [motivation](#motivation) --&gt;
-&lt;!-- - [brief-history](#brief-history) --&gt;
-&lt;!-- - [big-def](#big-def ) --&gt;
-&lt;!-- - [big-terms](#big-terms) --&gt;
-&lt;!-- - [big-trends](#big-trends) --&gt;
-&lt;!-- - [implications](#implications) --&gt;
-&lt;!-- - [big-chall](#big-chall) --&gt;
-&lt;!-- - [big-app-ex](#big-app-ex) --&gt;
-&lt;!-- - [bigh-ex](#bigh-ex) --&gt;
-&lt;!-- - [bige-ex](#bige-ex) --&gt;
-&lt;!-- - [big-env-concept](#big-env-concept) --&gt;
-&lt;!-- - [datlink-types](#datlink-types) --&gt;
-&lt;!-- - [stuk](#stuk) --&gt;
-&lt;!-- - [lhem](#lhem) --&gt;
-&lt;!-- - [recap](#recap) --&gt;
-&lt;!-- - [citizenship](#citizenship) --&gt;
-&lt;!-- - [ref-source](#ref-source) --&gt;
-
 
 - [intended learning outcomes](#ilo)
-- [table of contents](#the-toc)
 - [session structure](#session-structure)
 - [lecture outline](#lecture-outline)
 - [very brief history](#brief-history)
@@ -156,13 +153,18 @@ name: the-toc
 - [implications](#big-trends)
 - [big data in epidemiology](#big-chall)
 - [applications in public health and research](#big-app-ex)
+- [OpenSAFELY](#opensafely)
 - [big health data](#bigh-ex)
-- [big environmental data](#bige-ex)
+- [big environmental data*](#bige-ex)
 - [how do big health and environmental data .synerg[synergize]](#big-env-concept)
 - [from data to exposure](#datlink-types)
+- [A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [1]](#stuk)
+- [London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [2]](#lhem)
 - [we have learned to](#recap)
+- [end of part 1](#break)
 - [references](#ref-source)
-- [suggestions](#citizenship)
+- [references](#ref-source)
+- [suggestions?](#citizenship)
 
 ---
 name: session-structure
@@ -180,6 +182,16 @@ class: no-scribble
 ## demonstration
 ## discussion
 ]
+
+???
+
+This is a long session - won't keep you longer - will probably be shorter
+
+will let you go earlier if i feel we have gone through enough things
+
+lecture what is happening now - questions for you as I am curious - then demo of more real-case
+
+bring in Dr Milojevic to who they can also ask things
 
 ---
 name: lecture-outline
@@ -203,6 +215,14 @@ class: no-scribble
   - exposure assessment
   - examples
 
+???
+
+why are we here, motivate the topic, why is this important and its context
+
+then big data: definition, implications, and challenges in epidemiological research;
+
+then utilization of health and environmental data together.  
+
 ---
 name: motivation
 class: center, middle, highlight-last-item
@@ -212,6 +232,14 @@ motivation
 --
 
 ### big data &amp;rarr; epidemiology &amp;rarr; public health
+
+???
+
+not a shiny new field - many papers since early 10s
+
+bd allow for new things to happen in epi which is in service of public health
+
+of course bd is braod so it goes to ph directly - DRAW
 
 ---
 name: brief-history
@@ -226,6 +254,24 @@ class: no-scribble
 #### from weekly burial counts (1662) to 180k cohort (1952)
 
 #### ink and paper, death certificates, punch-cards, telephone...
+
+--
+
+.pull-left[
+&lt;img src="img/chol_an.gif" width="60%" height="100%" style="display: block; margin: auto;" /&gt;
+]
+
+???
+
+to finish the motivation and set the context - what is epi, what has been epi
+
+always enabled by tech ...human creativity
+
+1662 parishes - 1854 john snow - around then death certificates - 1954 180k cohort for lung cancer and smoking
+
+technologically incrementally contributes, death certificates + punch cards + phones
+
+we are not in 1952 anymore
 
 ---
 name: big-def
@@ -254,6 +300,27 @@ name: big-def
 
 .class-q[_more V's?_&lt;br&gt;&lt;br&gt;_is it just about data?_]
 
+???
+
+how to broach and define - starting from where others have been
+
+The three Vs of Big Data: Variety, Volume, and Velocity
+
+Variety  - different types of compatible data, feeds into 
+
+Volume - just the size, intrinsice heaviness, tall and wide, many features, and rows
+
+Velocity - refers to the fact that bd is used in real-time, or that due to the infrastructure it can be used as such
+
+logistics, supermarkets, amazon, enormous amounts of data fast
+
+not big data is everything else - not even in your gaming laptop
+
+sometimes it helps treating data as big data, so to use queries on a  server instead of directly working with it
+
+QUESTION OTHER V'S veracity value vulnerability visualization volatility
+
+Big Data as a broad term encompassing data capture, processing, storage, and analysis processes. 
 
 ---
 name: big-terms
@@ -263,10 +330,17 @@ name: big-terms
 
 Data - oceans, lakes, warehouses, bases
 
+--
+
 &lt;img src="img/gad_21.png" width="60%" height="100%" style="display: block; margin: auto;" /&gt;
 
-.footnote[Gadekallu, Pham, Huynh-The et al. [1]]
+.footnote[Gadekallu, Pham, Huynh-The et al. [3]]
 
+???
+
+language can get difficult as we cross-over computer scienc, but not any part of computer science, many
+
+data - oceans ...
 
 ---
 name: big-trends
@@ -293,6 +367,20 @@ name: big-trends
 
 - widened research opportunities
 
+
+???
+
+ accompanying bd trends - demographic meaning ageing and urbanization - environmentally complex climate change
+
+ 
+ developments technological - statistical learning methods machine learning modelling things with complex unknowabel but extremely powerful functions
+ 
+ monitoring systems, remote sensing, infrastructure
+ 
+ all relate to bd- this is becasue we now live in w orld wher bd processes are the norm
+
+implciations of change in training and for practicitioners in the form of widened research opportunities
+
 ---
 name: big-chall
 
@@ -308,6 +396,18 @@ name: big-chall
 
 .class-q[_anything else?_]
 
+???
+
+we go back to 3vs
+
+Variety, with so many different pieces of information, we still have to think about basic epidemiology - measurement error random or systematic - confounding control for different characteristics of the entities generating the observations, as they might impact the relationship youa re trying to study
+
+Volume, way more inforamtion, way more power, description of tall and wide, with example that tall is high resolution and wide is many features such as SNPs, must be carefult about detecting effects and deciding which research questions are important, as ever more precise and smaller effects can be found, seek the knowedge not the significance
+
+Velocity, most impactful but most difficult
+
+**Challenges such as measurement errors and confounding in the context of big data.**  
+**The potential of big data to improve research accuracy, detail, and the range of investigable topics.**
 ---
 name: big-app-ex
 
@@ -321,6 +421,41 @@ name: big-app-ex
 
 - [In references](#ref-source)
 
+???
+
+assumption that these systems were inplace and indeed they were, COVID mobilised enarly all the resources it could and they all involved bd, emergency low latency of response and ability to integrate massive volumes
+
+logistics in healthcare
+
+EHRs allow complex analysis such as autism hypothesis deepending, keeping significant sample, they could narrow a sample to reduce options - MCC example data sharing feederation or consortium , many researchers collab and sharing allows for a standardised anlaysis on hundreds of cities - giving rise to interesting methods such as a meta anlaysis package to account for distinct city characteristics, a two stage model, when pooling it must be taken into accout - use of dlnm mostly applied to time-series but very efficient and with a lot of data we can extract lagged effects which can be very important
+
+advise general overview on more fields in references
+
+---
+name: opensafely
+class: top, left
+
+# OpenSAFELY
+
+
+[OpenSAFELY: the origin story](https://www.bennett.ox.ac.uk/blog/2021/05/opensafely-the-origin-story/)
+
+
+.vsmall[.pull-left[
+&gt; On 7th May 2020, the OpenSAFELY Collaborative pre-printed the world’s largest study into factors associated with death from Covid-19, based on an analysis running across the full pseudonymised health records of 40% of the English population. This is an unprecedented scale of data.
+&gt;
+&gt; ... a huge collaboration including the Bennett Institute for Applied Data Science at the University of Oxford, the EHR research group at London School of Hygiene and Tropical Medicine, NHS England, and TPP. Over 42 days during the peak of the first wave of COVID-19 this team worked day and night to produce a fully open-source, privacy-preserving software platform, capable of running open and reproducible analytics across electronic health records, all held securely in situ. Since then the OpenSAFELY platform has expanded to a full scale analytic environment for secure data analysis, reproducible data curation, federated analysis, and code sharing, with every line of code for the platform, for data management, and for data analysis .red[all shared openly by default, in re-usable forms, automatically, and without exception.]
+
+]]
+
+.pull-right[
+&lt;embed src="img/Collaborative_et_al_2020_OpenSAFELY.pdf" width="100%" height="400" type="application/pdf" /&gt;
+]
+
+
+.center[
+[All LSHTM OpenSAFELY projects](https://jobs.opensafely.org/orgs/lshtm/)
+]
 
 ---
 name: bigh-ex
@@ -328,13 +463,14 @@ name: bigh-ex
 # big health data
 
 .pull-left[
-- [ProjectTycho](https://www.tycho.pitt.edu/)
+- datasets: [ProjectTycho](https://www.tycho.pitt.edu/)
 
-- [BioBank](https://www.ukbiobank.ac.uk/)
+- cohorts: [BioBank](https://www.ukbiobank.ac.uk/) and [OurFutureHealth](https://ourfuturehealth.org.uk/)
 
-- [CPRD](https://cprd.com/)
+- platforms: [CPRD](https://cprd.com/) and [OpenSAFELY](https://www.opensafely.org/research/)
 
-- [OurFutureHealth](https://ourfuturehealth.org.uk/)
+- raw wearable sensor data
+
 ]
 
 --
@@ -343,8 +479,23 @@ name: bigh-ex
 ]
 
 .footnote[
-Tonne, Basagaña, Chaix et al. [2]
+Tonne, Basagaña, Chaix et al. [4]
 ]
+
+
+???
+
+big health - datasets - methods - many examples some datasets and access hubs - project tycho historical
+
+BioBank classic - OurFutureHealth - datasets themselves, planned cohorts
+
+CPRD and OpenSafely (add and add IMAGe and hwo many studies have been written abotu this) more on the infrastructure to accessa lready existing data
+
+weight of health data, genome size changes a bit, genomics is one field with mst experience in bd
+
+EHR can vary greatly in size, HR data, video audio if used of course, resolution is important
+
+
 
 ---
 name: bige-ex
@@ -361,7 +512,7 @@ name: bige-ex
 --
 
 .pull-left[
-&lt;img src="img/daily_pollen_longer_div.gif" width="50%" height="50%" /&gt;
+&lt;img src="img/daily_birch_longer_div.gif" width="50%" height="50%" /&gt;
 ]
 
 .pull-right[
@@ -376,6 +527,20 @@ name: bige-ex
 ** [figure from: https://search.earthdata.nasa.gov](https://search.earthdata.nasa.gov)
 
 ]
+
+???
+
+Big data encompasses a wide range of environmental data - initial distinction between vector and raster data;
+
+Raster data: Each pixel, characterised by parameters represents a value like color or elevation on a map, density, layers indicate time
+
+Vector data: Comprises points, lines, polygons, and requires specific parameters for analysis, can be 4d and represent anything
+
+tricky issues to go between the two are projections, resolutions
+
+Models are derived from processing raw data into usually big and uniform ready for use outputs, adms uses emission sources and enviornemtal conditions that affect their dispersion are invluded to see where the pollutants go - reanalysis uses something called data assimilation and looks also at measurements or observations of the variables being modelled - usually very wide in geographical and temporal scale, such as the whole of europe
+
+raw data needs less introduction, they are direct measurements from instruments, including satellite images and sensors and often take a lot of processing to become useful, this is sat data dashboard
 
 
 ---
@@ -392,6 +557,21 @@ name: big-env-concept
 1. .red[**link health and exposures**]
 
 1. analyse
+
+???
+
+but we are here for the relationship the interplay or the synergy, 
+
+so we have a good question such as why is that changing
+
+we get the data and then we prepare it and then importantly it needs to be linked. **EXPOSURE**
+
+key step becasue the exposure might not be embedded in the data, if youre using env epi like that, or you migth want to add env data to control for things or to looks for modification of the effects
+
+then we can analyse
+
+**The process involves acquiring, preparing, and linking health and environmental data to assess exposures.**
+**Data linkage is critical for merging environmental and health data, with techniques varying in complexity.**
 
 ---
 name: datlink-types
@@ -424,35 +604,72 @@ name: datlink-types
 
 (medium) &amp;rarr; aggregate over small area
 
-(medium) &amp;rarr; from more than one coordinates (with bilinear interpolation) [3]
+(medium) &amp;rarr; from more than one coordinates (with bilinear interpolation) [5]
 
-(complex) &amp;rarr; from a trajectory accounting for microenvironments [4]
+(complex) &amp;rarr; from a trajectory accounting for microenvironments [2]
 
 ]
 
 &lt;!-- .class-q[_this would be a good moment for a question_] --&gt;
 
 .footnote[
-Vanoli, Mistry, De La Cruz Libardi et al. [3]
-Smith, Mitsakou, Kitwiroon et al. [4]
+Vanoli, Mistry, De La Cruz Libardi et al. [5]
+Smith, Mitsakou, Kitwiroon et al. [2]
 ]
+
+???
+
+we are going to spend some time now talking about this step from the simple to the most complicated and then look at two real world examples.
+
+Preparation: having a model, creating a simple surface from measured values at points, idw for exaple assumes a lot of things but it gives us something new at the end, then advanced spatial-temporal machine learning models.
+
+Simple linkage matches data to the nearest point in space and time, then aggregating over many small areas, bilinear interpolation DRAW, a way of averaging the environemntal exposure, finally more coplex multi-location trajectory models, which require some further transfomration of the environemtal data before attahing it to the observation
+
+the more steps and tyes of dat used, the earlier it will become a big data endeavour, which tends to limit the application of models in regard to their spatial extent coverage
+
 ---
 
 ---
 name: stuk
 
-## A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [5]
+# A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [1]
 
 
+- Ground observations of PM&lt;sub&gt;2.5&lt;/sub&gt;
+
+- A lot of environmental data
+
+- Random forest algorithms
+
+
+.footnote[Schneider, Vicedo-Cabrera, Sera et al. [1]]
+
+???
+
+the aim of this paper was simple, to reconstruct air pollution levels across a wide area and a long period of time, startign from actual oservbations
+
+---
+name: stuk-fig
+class: left, top
+
+# A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [1]
+
+.center[
 &lt;img src="img/schne_1.png" width="33%" height="100%" /&gt;&lt;img src="img/schne_2.png" width="33%" height="100%" /&gt;&lt;img src="img/schne_3.png" width="33%" height="100%" /&gt;
+]
 
+???
 
-.footnote[Schneider, Vicedo-Cabrera, Sera et al. [5]]
+remember that this is necessary to obtain the highest resolution estimates possible in order to link individuals or geographic areas, with the most accurate value of the exposure of interest
+
+the highlight feature of this study was the use of satellite data, AOD, to gap-fill and downscale a reanalysis product
+
+then many variables were used to train a  random forest model
 
 ---
 name: lhem
 
-## London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [4]
+# London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [2]
 
 &gt;  ...the London Hybrid Exposure Model (LHEM), (...) calculates exposure of the Greater London population to outdoor air pollution sources, in-buildings, in-vehicles, and outdoors, using survey data of when and where people spend their time.
 
@@ -468,15 +685,41 @@ name: lhem
 
 - **"microenvironments"**
 
-.footnote[Smith, Mitsakou, Kitwiroon et al. [4]]
+.footnote[Smith, Mitsakou, Kitwiroon et al. [2]]
+
+???
+
+the aim of this paper was to reconstruct, for each individual, the levels of air pollution they had been exposed to, and then to compare these exposure assessmnets with other methods
+
+This was a complex effort, the first time I read it I was very impressed due to the collaboration between TfL and the researchers, i realised it was just a survey
+
+But very good nonetheless
+
 ---
+name:lhem-fig
 
+# London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [2]
+## residential vs modelled exposure
 
-&lt;iframe width="404" height="228" src="https://silam.fmi.fi/pollen.html?parameter=alder&amp;region=europe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="width:100%; height:100%;" allowfullscreen&gt;&lt;/iframe&gt;
+.center[
+&lt;img src="img/lhem_corrpmno2.png" width="50%" height="100%" /&gt;&lt;img src="img/lhem_travmodes_miscl.png" width="50%" height="100%" /&gt;
+]
+---
+name: links1
+class: middle, center
+
+&lt;img src="img/trajectory3_exposure.gif" width="70%" height="100%" /&gt;
 
 ---
+name: links2
 
-trajectory + exposure surface
+&lt;iframe width="90%" height="50" src="https://silam.fmi.fi/pollen.html?parameter=alder&amp;region=europe" title="FMIPage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="width:100%; height:100%;" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+name: links3
+class: left, middle
+
+### OpenSAFELY query (ehrQL) reliability [testing](https://www.bennett.ox.ac.uk/blog/2023/12/how-we-test-ehrql/) using .red[generative artificial intelligence!]
 
 ---
 name: recap
@@ -507,28 +750,24 @@ class: left,top, no-scribble
 
 # references
 
-[1] T. R. Gadekallu, Q. Pham, T. Huynh-The, et al. _Federated Learning for Big Data: A Survey on
-Opportunities, Applications, and Future Directions_. En. 2021.
+[1] R. Schneider, A. Vicedo-Cabrera, F. Sera, et al. "A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily
+PM2.5 Concentrations across Great Britain". En. In: _Remote Sensing_ 12.22 (Nov. 2020), p. 3803. ISSN: 2072-4292. DOI:
+[10.3390/rs12223803](https://doi.org/10.3390%2Frs12223803). URL:
+[https://www.mdpi.com/2072-4292/12/22/3803](https://www.mdpi.com/2072-4292/12/22/3803) (visited on 02/03/2022).
 
-[2] C. Tonne, X. Basaga&lt;U+00F1&gt;a, B. Chaix, et al. "New frontiers for environmental epidemiology in
-a changing world". In: _Environment International_ 104 (Jul. 2017), pp. 155-162. ISSN: 0160-4120.
-DOI: [10.1016/j.envint.2017.04.003](https://doi.org/10.1016%2Fj.envint.2017.04.003). URL:
+[2] J. D. Smith, C. Mitsakou, N. Kitwiroon, et al. "London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in
+an Urban Setting". En. In: _Environmental Science &amp; Technology_ 50.21 (Nov. 2016), pp. 11760-11768. ISSN: 0013-936X, 1520-5851. DOI:
+[10.1021/acs.est.6b01817](https://doi.org/10.1021%2Facs.est.6b01817). URL:
+[https://pubs.acs.org/doi/10.1021/acs.est.6b01817](https://pubs.acs.org/doi/10.1021/acs.est.6b01817) (visited on 02/02/2023).
+
+[3] T. R. Gadekallu, Q. Pham, T. Huynh-The, et al. _Federated Learning for Big Data: A Survey on Opportunities, Applications, and Future
+Directions_. En. 2021.
+
+[4] C. Tonne, X. Basagaña, B. Chaix, et al. "New frontiers for environmental epidemiology in a changing world". In: _Environment
+International_ 104 (Jul. 2017), pp. 155-162. ISSN: 0160-4120. DOI:
+[10.1016/j.envint.2017.04.003](https://doi.org/10.1016%2Fj.envint.2017.04.003). URL:
 [https://www.sciencedirect.com/science/article/pii/S0160412017301459](https://www.sciencedirect.com/science/article/pii/S0160412017301459)
 (visited on 02/15/2024).
-
-[3] J. Vanoli, M. N. Mistry, A. De La Cruz Libardi, et al. "Reconstructing individual-level
-exposures in cohort analyses of environmental risks: an example with the UK Biobank". En. In:
-_Journal of Exposure Science &amp; Environmental Epidemiology_ (Jan. 2024). ISSN: 1559-0631, 1559-064X.
-DOI: [10.1038/s41370-023-00635-w](https://doi.org/10.1038%2Fs41370-023-00635-w). URL:
-[https://www.nature.com/articles/s41370-023-00635-w](https://www.nature.com/articles/s41370-023-00635-w)
-(visited on 03/10/2024).
-
-[4] J. D. Smith, C. Mitsakou, N. Kitwiroon, et al. "London Hybrid Exposure Model: Improving Human
-Exposure Estimates to NO2 and PM2.5 in an Urban Setting". En. In: _Environmental Science &amp;
-Technology_ 50.21 (Nov. 2016), pp. 11760-11768. ISSN: 0013-936X, 1520-5851. DOI:
-[10.1021/acs.est.6b01817](https://doi.org/10.1021%2Facs.est.6b01817). URL:
-[https://pubs.acs.org/doi/10.1021/acs.est.6b01817](https://pubs.acs.org/doi/10.1021/acs.est.6b01817)
-(visited on 02/02/2023).
 
 ---
 name: ref-source
@@ -536,12 +775,10 @@ class: left,top, no-scribble
 
 # references
 
-[5] R. Schneider, A. Vicedo-Cabrera, F. Sera, et al. "A Satellite-Based Spatio-Temporal Machine
-Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain". En. In: _Remote
-Sensing_ 12.22 (Nov. 2020), p. 3803. ISSN: 2072-4292. DOI:
-[10.3390/rs12223803](https://doi.org/10.3390%2Frs12223803). URL:
-[https://www.mdpi.com/2072-4292/12/22/3803](https://www.mdpi.com/2072-4292/12/22/3803) (visited on
-02/03/2022).
+[5] J. Vanoli, M. N. Mistry, A. De La Cruz Libardi, et al. "Reconstructing individual-level exposures in cohort analyses of
+environmental risks: an example with the UK Biobank". En. In: _Journal of Exposure Science &amp; Environmental Epidemiology_ (Jan. 2024).
+ISSN: 1559-0631, 1559-064X. DOI: [10.1038/s41370-023-00635-w](https://doi.org/10.1038%2Fs41370-023-00635-w). URL:
+[https://www.nature.com/articles/s41370-023-00635-w](https://www.nature.com/articles/s41370-023-00635-w) (visited on 03/10/2024).
 
 ---
 name: R-resources

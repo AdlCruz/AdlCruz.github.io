@@ -71,6 +71,9 @@
 .refs {
   font-size:80%;
 }
+.vsmall {
+  font-size:73%;
+}
 
 /* HIGHLIGHTS */
 .class-q {
@@ -99,3 +102,11 @@
 .fullwidth {
   width: 100%;
 }
+
+.centerc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
