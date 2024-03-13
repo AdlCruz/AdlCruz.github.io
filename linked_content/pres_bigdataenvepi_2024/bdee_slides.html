@@ -4,7 +4,7 @@
     <title>Big data in   environmental epidemiology</title>
     <meta charset="utf-8" />
     <meta name="author" content="Arturo de la Cruz Libardi" />
-    <meta name="date" content="2024-03-12" />
+    <meta name="date" content="2024-03-13" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
@@ -14,6 +14,12 @@
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
     <link href="libs/xaringanExtra-banner/banner.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-banner/banner.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"c3f2a135a9b94a24827a5dcdadd073bd","expires":14}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="extra-styles.css" type="text/css" />
   </head>
   <body>
@@ -82,6 +88,7 @@ top:29em;right:1em;
 
 
 
+
 # London School of Hygiene &lt;br&gt; and Tropical Medicine
 
 ## Improving Health Worldwide
@@ -102,7 +109,7 @@ class: left, middle,  title, lshtm-blue, no-scribble
 
 ### Environment and Health Modelling (EHM) Lab&lt;br&gt;London School of Hygiene and Tropical Medicine
 
-### 2024-03-12
+### 2024-03-13
 
 ---
 name: ilo
@@ -110,58 +117,12 @@ class: no-scribble
 
 # intended learning outcomes
 
-## by the end of this session, you will be able to:
+## by the end of this session (lecture-demonstration), you will be able to:
 
 ### 1. Critically define big data
 ### 2. Describe some implications and applications of big data in public health and epidemiology
 ### 3. Evaluate sources of big health and environmental data
-### 4. Explain data linkage in the context of exposure assessment
-
-
----
-name: the-toc
-
-# table of contents
-
-
-- [intended learning outcomes](#ilo)
-- [session structure](#session-structure)
-- [lecture outline](#lecture-outline)
-- [very brief history](#brief-history)
-- [the data line](#big-def)
-- [specialized infrastructure, pipelines and jargon](#big-terms)
-- [concurrent global trends](#big-trends)
-- [and technological developments](#big-trends)
-- [implications](#big-trends)
-- [big data in epidemiology](#big-chall)
-- [applications in public health and research](#big-app-ex)
-- [OpenSAFELY](#opensafely)
-- [big health data](#bigh-ex)
-- [big environmental data*](#bige-ex)
-- [how do big health and environmental data .synerg[synergize]](#big-env-concept)
-- [from data to exposure](#datlink-types)
-- [example 1](#stuk)
-- [example 2](#lhem)
-- [we have learned to](#recap)
-- [references](#ref-source)
-- [suggestions?](#citizenship)
-
----
-name: session-structure
-class: no-scribble
-
-# session structure
-
-.pull-left[
-## lecture
-## questions
-## discussion
-]
-
-.pull-right[
-## demonstration
-## discussion
-]
+### 4. Think critically about data linkage in the context of exposure assessment
 
 
 ---
@@ -171,7 +132,6 @@ class: no-scribble
 # lecture outline
 
 #### 1. **motivation**
-  - big data &amp;rarr; epidemiology &amp;rarr; public health
   - brief history
   
 #### 2. **big data**
@@ -182,7 +142,7 @@ class: no-scribble
   
 #### 3. **health and environmental data**
   - source examples
-  - harmonization
+  - harmonization and modelling
   - exposure assessment
   - examples
 
@@ -192,12 +152,10 @@ class: no-scribble
 name: motivation
 class: center, middle, highlight-last-item
 
-motivation
 
---
-
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 ### big data &amp;rarr; epidemiology &amp;rarr; public health
-
+]
 
 
 ---
@@ -240,7 +198,7 @@ name: big-def
 --
 
 .pull-right[
-## everything else(?)
+## everything else
 
 ### works on your machine
 ]
@@ -263,7 +221,7 @@ Data - oceans, lakes, warehouses, bases
 
 &lt;img src="img/gad_21.png" width="60%" height="100%" style="display: block; margin: auto;" /&gt;
 
-.footnote[Gadekallu, Pham, Huynh-The et al. [3]]
+.footnote[Gadekallu, Pham, Huynh-The et al. [1]]
 
 
 
@@ -296,11 +254,11 @@ name: big-trends
 ---
 name: big-chall
 
-# big data in epidemiolog - challenges and opportunities
+# big data in epidemiology - challenges and opportunities
 
 ### Variety - measurement error, confounding etc...
 
-### Volume - wide and tall datasets, methods, power relevant research questions ...
+### Volume - wide and tall datasets, methods, coverage, power relevant research questions ...
 
 ### Velocity - highest impact potential, most dependent on infrastructure
 
@@ -308,9 +266,6 @@ name: big-chall
 
 .class-q[_anything else?_]
 
-???
-
-benefits are coverage of lmics, new ways of studying diseas, probe env role in aetiology, changing climate
 
 ---
 name: big-app-ex
@@ -329,6 +284,27 @@ name: big-app-ex
 
 - [in references](#ref-source)
 
+---
+name: thyroidautism
+class: top, left
+
+# maternal thyroid function and autism with EHRs
+
+- anatomical brain differences linked to autism are present at birth
+- thyroid hormones play key role in brain development
+
+--
+
+#### Q 1: is hypothyroidism (ht) associated with inc. risk of autism? 400k births
+#### Q 2: does risk for medicated mothers differ from Q1 ? 
+#### Q 3: does risk for lab-tested medicated mothers differ from Q1 and Q2 risks ? 
+#### Q 4: are levels of TSH/fT4 associated with inc. risk of autism ? 50k births
+
+--
+
+- other exposure increases risk of ht and autism: ht &amp;rarr; autism association is not causal
+
+- mothers with hypothyroidism have other issues that increase risk of autism
 
 ---
 name: opensafely
@@ -359,7 +335,7 @@ class: top, left
 ---
 name: bigh-ex
 
-# big health data sources
+# health data sources
 
 .pull-left[
 - datasets: [ProjectTycho](https://www.tycho.pitt.edu/)
@@ -378,7 +354,7 @@ name: bigh-ex
 ]
 
 .footnote[
-Tonne, Basagaña, Chaix et al. [4]
+Tonne, Basagaña, Chaix et al. [2]
 ]
 
 
@@ -386,7 +362,7 @@ Tonne, Basagaña, Chaix et al. [4]
 name: bige-ex
 
 
-# big environmental data* 
+# environmental data* 
 
 - modelled: atmospheric dispersion models, reanalysis, digital twins
 
@@ -418,7 +394,15 @@ name: bige-ex
 ---
 name: big-env-concept
 
-# how do big health and environmental data .synerg[synergize]
+# why use both environment and health data
+
+- a part of disease etiology remains unexplained and is likely due to the environment
+
+- big data processes offer great potential for environmental health research
+
+- public health importance should drive research questions
+
+# environment + health data .synerg[synergy]
 
 1. research question
 
@@ -451,9 +435,9 @@ name: datlink-types
   
   (none) &amp;rarr; continuous modelled output
 
-  (simple) &amp;rarr; inverse distance weighted surface from point
+  (simple) &amp;rarr; inverse distance weighted surface from point measurement
 
-  (complex) &amp;rarr; multi-stage spatio-temporal machine-learning ensemble modelling
+  (complex) &amp;rarr; multi-stage spatio-temporal machine-learning ensemble modelling using harmonized features
 
 ]
 --
@@ -463,24 +447,24 @@ name: datlink-types
 
 (medium) &amp;rarr; aggregate over small area
 
-(medium) &amp;rarr; from more than one coordinates (with bilinear interpolation) [5]
+(medium) &amp;rarr; from more than one coordinates (with bilinear interpolation) [3]
 
-(complex) &amp;rarr; from a trajectory accounting for microenvironments [2]
+(complex) &amp;rarr; from a trajectory accounting for microenvironments [4]
 
 ]
 
 &lt;!-- .class-q[_this would be a good moment for a question_] --&gt;
 
 .footnote[
-Vanoli, Mistry, De La Cruz Libardi et al. [5]
-Smith, Mitsakou, Kitwiroon et al. [2]
+Vanoli, Mistry, De La Cruz Libardi et al. [3]
+Smith, Mitsakou, Kitwiroon et al. [4]
 ]
 
 
 ---
 name: stuk
 
-# A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [1]
+## A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [5]
 
 
 - Ground observations of PM&lt;sub&gt;2.5&lt;/sub&gt;
@@ -490,7 +474,7 @@ name: stuk
 - Random forest algorithms
 
 
-.footnote[Schneider, Vicedo-Cabrera, Sera et al. [1]]
+.footnote[Schneider, Vicedo-Cabrera, Sera et al. [5]]
 
 
 
@@ -498,7 +482,7 @@ name: stuk
 name: stuk-fig
 class: left, top
 
-# A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [1]
+## A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain [5]
 
 .center[
 &lt;img src="img/schne_1.png" width="33%" height="100%" /&gt;&lt;img src="img/schne_2.png" width="33%" height="100%" /&gt;&lt;img src="img/schne_3.png" width="33%" height="100%" /&gt;
@@ -508,7 +492,7 @@ class: left, top
 ---
 name: lhem
 
-# London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [2]
+## London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [4]
 
 &gt;  ...the London Hybrid Exposure Model (LHEM), (...) calculates exposure of the Greater London population to outdoor air pollution sources, in-buildings, in-vehicles, and outdoors, using survey data of when and where people spend their time.
 
@@ -524,14 +508,14 @@ name: lhem
 
 - **"microenvironments"**
 
-.footnote[Smith, Mitsakou, Kitwiroon et al. [2]]
+.footnote[Smith, Mitsakou, Kitwiroon et al. [4]]
 
 
 
 ---
 name:lhem-fig
 
-# London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [2]
+## London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and PM2.5 in an Urban Setting [4]
 ## residential vs modelled exposure
 
 .center[
@@ -557,7 +541,7 @@ class: left, middle
 ---
 name: recap
 
-# we have learned to
+## we have learned to
 
 ### 1. Critically define big data as .red[big data processes]
 ### 2. Describe some implications and applications of big data in public health and epidemiology
@@ -568,14 +552,9 @@ name: recap
 - **health .red[genetic data, EHRs, wearable sensors]**
 - **environment .red[reanalyses, satellites, ground sensors]**
 
-### 4. Explain data linkage in the context of exposure assessment
+### 4. Think critically about data linkage in the context of exposure assessment
 - **depends on .red[individual/areal nature of health data] and .red[resolution of environmental data]**
 
----
-name: break
-class: center, middle
-
-# end of part 1
 
 ---
 name: ref-source
@@ -583,52 +562,60 @@ class: left,top, no-scribble
 
 # references
 
-[1] R. Schneider, A. Vicedo-Cabrera, F. Sera, et al. "A Satellite-Based Spatio-Temporal Machine Learning Model to Reconstruct
-Daily PM2.5 Concentrations across Great Britain". En. In: _Remote Sensing_ 12.22 (Nov. 2020), p. 3803. ISSN: 2072-4292. DOI:
-[10.3390/rs12223803](https://doi.org/10.3390%2Frs12223803). URL:
-[https://www.mdpi.com/2072-4292/12/22/3803](https://www.mdpi.com/2072-4292/12/22/3803) (visited on 02/03/2022).
+[1] T. R. Gadekallu, Q. Pham, T. Huynh-The, et al. _Federated Learning for Big Data: A Survey on
+Opportunities, Applications, and Future Directions_. En. 2021.
 
-[2] J. D. Smith, C. Mitsakou, N. Kitwiroon, et al. "London Hybrid Exposure Model: Improving Human Exposure Estimates to NO2 and
-PM2.5 in an Urban Setting". En. In: _Environmental Science &amp; Technology_ 50.21 (Nov. 2016), pp. 11760-11768. ISSN: 0013-936X,
-1520-5851. DOI: [10.1021/acs.est.6b01817](https://doi.org/10.1021%2Facs.est.6b01817). URL:
-[https://pubs.acs.org/doi/10.1021/acs.est.6b01817](https://pubs.acs.org/doi/10.1021/acs.est.6b01817) (visited on 02/02/2023).
-
-[3] T. R. Gadekallu, Q. Pham, T. Huynh-The, et al. _Federated Learning for Big Data: A Survey on Opportunities, Applications,
-and Future Directions_. En. 2021.
-
-[4] C. Tonne, X. Basagaña, B. Chaix, et al. "New frontiers for environmental epidemiology in a changing world". In: _Environment
-International_ 104 (Jul. 2017), pp. 155-162. ISSN: 0160-4120. DOI:
-[10.1016/j.envint.2017.04.003](https://doi.org/10.1016%2Fj.envint.2017.04.003). URL:
+[2] C. Tonne, X. Basagaña, B. Chaix, et al. "New frontiers for environmental epidemiology in a
+changing world". In: _Environment International_ 104 (Jul. 2017), pp. 155-162. ISSN: 0160-4120.
+DOI: [10.1016/j.envint.2017.04.003](https://doi.org/10.1016%2Fj.envint.2017.04.003). URL:
 [https://www.sciencedirect.com/science/article/pii/S0160412017301459](https://www.sciencedirect.com/science/article/pii/S0160412017301459)
 (visited on 02/15/2024).
 
+[3] J. Vanoli, M. N. Mistry, A. De La Cruz Libardi, et al. "Reconstructing individual-level
+exposures in cohort analyses of environmental risks: an example with the UK Biobank". En. In:
+_Journal of Exposure Science &amp; Environmental Epidemiology_ (Jan. 2024). ISSN: 1559-0631,
+1559-064X. DOI: [10.1038/s41370-023-00635-w](https://doi.org/10.1038%2Fs41370-023-00635-w). URL:
+[https://www.nature.com/articles/s41370-023-00635-w](https://www.nature.com/articles/s41370-023-00635-w)
+(visited on 03/10/2024).
+
+[4] J. D. Smith, C. Mitsakou, N. Kitwiroon, et al. "London Hybrid Exposure Model: Improving Human
+Exposure Estimates to NO2 and PM2.5 in an Urban Setting". En. In: _Environmental Science &amp;
+Technology_ 50.21 (Nov. 2016), pp. 11760-11768. ISSN: 0013-936X, 1520-5851. DOI:
+[10.1021/acs.est.6b01817](https://doi.org/10.1021%2Facs.est.6b01817). URL:
+[https://pubs.acs.org/doi/10.1021/acs.est.6b01817](https://pubs.acs.org/doi/10.1021/acs.est.6b01817)
+(visited on 02/02/2023).
+
 ---
 name: ref-source
 class: left,top, no-scribble
 
 # references
 
-[5] J. Vanoli, M. N. Mistry, A. De La Cruz Libardi, et al. "Reconstructing individual-level exposures in cohort analyses of
-environmental risks: an example with the UK Biobank". En. In: _Journal of Exposure Science &amp; Environmental Epidemiology_ (Jan.
-2024). ISSN: 1559-0631, 1559-064X. DOI: [10.1038/s41370-023-00635-w](https://doi.org/10.1038%2Fs41370-023-00635-w). URL:
-[https://www.nature.com/articles/s41370-023-00635-w](https://www.nature.com/articles/s41370-023-00635-w) (visited on
-03/10/2024).
+[5] R. Schneider, A. Vicedo-Cabrera, F. Sera, et al. "A Satellite-Based Spatio-Temporal Machine
+Learning Model to Reconstruct Daily PM2.5 Concentrations across Great Britain". En. In: _Remote
+Sensing_ 12.22 (Nov. 2020), p. 3803. ISSN: 2072-4292. DOI:
+[10.3390/rs12223803](https://doi.org/10.3390%2Frs12223803). URL:
+[https://www.mdpi.com/2072-4292/12/22/3803](https://www.mdpi.com/2072-4292/12/22/3803) (visited
+on 02/03/2022).
 
----
-name: R-resources
-class: middle, no-scribble
+### other info
+
 
 Presentation made with [xaringan](https://slides.yihui.org/xaringan/#1) in RStudio.
 
+Contact: Arturo.de-la-Cruz-Libardi@lshtm.ac.uk
+Slides: 
+
+
 ---
 name: citizenship
-class: highlight-last-item
+class: highlight-last-item, 
 
 # suggestions?
 
 --
 
-- DASH 26th March opening event
+- DASH 26th March opening event (check if can register)
 
 --
 
@@ -641,6 +628,10 @@ class: highlight-last-item
 ---
 name: break
 class: center, middle
+
+
+
+
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
