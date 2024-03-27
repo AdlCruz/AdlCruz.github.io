@@ -1,0 +1,24 @@
+---
+title: Linked Content
+description: Zoom right down
+output: 
+  html_document: 
+    css: "style.css"
+---
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+library(rmarkdown);library(markdown);library(htmltools)
+```
+
+```{r}
+htmltools::HTML("<hr>")
+```
+
+Back to [the main page](index.html)
+
+  - DASH launch <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_refs_adlcl.pdf" target="_blank"> references </a> - 26-03-2024
+
+  - environmental epidemiology module 
+  <a href="linked_content/pres_bigdataenvepi_2024/bdee_slides.html" target="_blank">lecture slides</a>  big data in environmental epidemiology - 14-03-2024
+  
+  - LSHTM R Users Group  <a href="linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf" target="_blank"> R packages presentation </a> - 18-11-2022

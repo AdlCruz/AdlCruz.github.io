@@ -1,0 +1,38 @@
+---
+title: RUG presentation slides
+output: 
+  html_document:
+    css: "style.css"
+---
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+```
+
+```{r}
+library(htmlwidgets); library(slickR)
+```
+
+Back to [the main page](index.html)
+
+Powered by `htmlwidgets` and `slickR`.
+
+
+```{r}
+cP1 <- htmlwidgets::JS('function(slick,index) {
+                            return "<a>"+(index+1)+"</a>";
+                       }')
+
+opts_dot_number <- settings(
+    initialSlide = 0,
+    slidesToShow = 1,
+    slidesToScroll = 1,
+    focusOnSelect = TRUE,
+    dots = TRUE,
+    customPaging = cP1
+    )
+
+slickr_dots <- slickR(obj = list.files("assets/RUG_18Nov22_rct_presentation/", full.names = T),height = 420, width = "95%") + settings(dots = TRUE)
+
+slickr_dots + opts_dot_number
+```
+
