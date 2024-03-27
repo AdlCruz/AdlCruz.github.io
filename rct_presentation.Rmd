@@ -31,7 +31,7 @@ opts_dot_number <- settings(
     customPaging = cP1
     )
 
-slickr_dots <- slickR(obj = list.files("assets/RUG_18Nov22_rct_presentation/", full.names = T),height = 420, width = "95%") + settings(dots = TRUE)
+slickr_dots <- slickR(obj = list.files("linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation/", full.names = T),height = 420, width = "95%") + settings(dots = TRUE)
 
 slickr_dots + opts_dot_number
 ```
