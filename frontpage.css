@@ -5,7 +5,7 @@ body {
     color: #f0f0f0; /* Light text for contrast */
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding-top: 5;
 }
 
 /* Headings with a funky twist */

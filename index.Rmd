@@ -5,6 +5,8 @@ output:
   html_document: 
     css: "frontpage.css"
 ---
+
+
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE)
 library(rmarkdown);library(markdown);library(htmltools)
@@ -19,9 +21,9 @@ htmltools::HTML("<hr>")
 *Department of Public Health, Environments and Society,*  
 [*London School of Hygiene and Tropical Medicine*](https://www.lshtm.ac.uk/)
 
-### Profile and publications
+### Profile and work
 
-[Here (profile)](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo) and [here (publications)](https://orcid.org/0009-0001-1543-7999)
+[Here (profile)](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo) and [here work (DOIs)](https://orcid.org/0009-0001-1543-7999)
 
 ### Contact
 
