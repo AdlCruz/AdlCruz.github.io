@@ -1,11 +1,9 @@
 ---
-title: Arturo de la Cruz Libardi
-description: Zoom right down
-output: 
-  html_document: 
-    css: "frontpage.css"
+title: https://adlcruz.github.io/ 
+description: A personal website
+output: html_document
+css: "relax.css" # "style.css"
 ---
-
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE)
@@ -13,56 +11,63 @@ library(rmarkdown);library(markdown);library(htmltools)
 ```
 
 ```{r}
+htmltools::HTML("<br>")
+```
+
+Work and study on improving the availability and quality of air pollution data for epidemiological analyses with statistical learning methods at the [London School of Hygiene and Tropical Medicine](www.lshtm.ac.uk) and [*Environment and Health Modelling (EHM) Lab*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab).
+
+```{r}
 htmltools::HTML("<hr>")
 ```
 
-*Research Assistant in Health Data Science,*   
-[*Environment and Health Modelling (EHM) Lab,*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab)  
-*Department of Public Health, Environments and Society,*  
-[*London School of Hygiene and Tropical Medicine*](https://www.lshtm.ac.uk/)
+[https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo)
 
-### Profile and work
+[https://orcid.org/0009-0001-1543-7999](https://orcid.org/0009-0001-1543-7999)
 
-[Here (profile)](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo) and [here work (DOIs)](https://orcid.org/0009-0001-1543-7999)
-
-### Contact
-
-[Arturo.de-la-Cruz-Libardi\@lshtm.ac.uk](mailto:Arturo.de-la-Cruz-Libardi@lshtm.ac.uk)\
 [github AdlCruz](https://github.com/AdlCruz)\
+
 [\@dlCruzArturo](https://twitter.com/dlCruzArturo)\
 
-### ["Local" Links Link](linked_content.html)
-
 ```{r}
 htmltools::HTML("<hr>")
 ```
 
-### R packages
+# R packages
 
-> **rctapi + rctexplorer: R based interaction with clinicaltrials.gov online database**\
-> [rctapi](https://adlcruz.github.io/rctapi/) - search filter and download records\
-> [rctexplorer](https://adlcruz.github.io/rctexplorer/) - load data to R shiny app for interactive visualisation\
+**[hipmapp](https://ehm-lab.github.io/hipmapp/) is a health impact projection mapping dashboard** developed within the broader [EXHAUSTION](https://climate-adapt.eea.europa.eu/en/metadata/publications/exhaustion-white-paper-exposure-to-heat-and-air-pollution-in-europe#:~:text=The%20EU%2Dfunded%20EXHAUSTION%20project,pollution%20and%20identify%20adaptation%20strategies) EU funded [project](https://cordis.europa.eu/project/id/820655), and omg it got tweeted as well wow look at that
 
-> *Comprehensive project report and use-case example*\
-> [Building and testing R tools to extract and explore data from the online database ClinicalTrials.gov](assets/deanonlshtmdiss.pdf)\
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/ProjectHighlight?src=hash&amp;ref_src=twsrc%5Etfw">#ProjectHighlight</a><a href="https://twitter.com/ExhaustionH2020?ref_src=twsrc%5Etfw">@ExhaustionH2020</a> project has come to an end. <br>Check their interactive tool on how climate change will affect human lives in urban settings 👉 <a href="https://t.co/czUSmjnfts">https://t.co/czUSmjnfts</a><a href="https://twitter.com/hashtag/H2020?src=hash&amp;ref_src=twsrc%5Etfw">#H2020</a> <a href="https://twitter.com/hashtag/Climate?src=hash&amp;ref_src=twsrc%5Etfw">#Climate</a> <a href="https://twitter.com/hashtag/EU?src=hash&amp;ref_src=twsrc%5Etfw">#EU</a> <a href="https://twitter.com/hashtag/Research?src=hash&amp;ref_src=twsrc%5Etfw">#Research</a> <a href="https://twitter.com/hashtag/ResearchImpactEU?src=hash&amp;ref_src=twsrc%5Etfw">#ResearchImpactEU</a> <a href="https://t.co/GECEyd86kl">pic.twitter.com/GECEyd86kl</a></p>&mdash; CINEA🇪🇺 (@cinea_eu) <a href="https://twitter.com/cinea_eu/status/1759871919476576732?ref_src=twsrc%5Etfw">February 20, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Rctapi and rctexplorer at the local R Users Group meeting [from 8:07]((https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0)), just the slides as [dynamic carousel](linked_content/pres_RUGrctpkgs_2022/rct_presentation.html) or [static pdf](linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf).
+_moving on_
 
-[Video demonstration on Vimeo](https://player.vimeo.com/video/595343322?h=97da0c4bb5).
+**[rctapi](https://adlcruz.github.io/rctapi/) + [rctexplorer](https://adlcruz.github.io/rctexplorer/) for R based interaction with the clinicaltrials.gov online database**
+Use these two to search filter and download records from the website and load data to an app for interactive visualisation. Feel free to use/copy/improve on the [source code](https://github.com/AdlCruz/rctapi).
 
-```{r}
-htmltools::HTML("<hr>")
-```
+[Project report and use-case](assets/deanonlshtmdiss.pdf) \
 
-### Neuroscience literature review (BSc fulfilment)
+Presented at the local R Users Group meeting [from 8:07]((https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0)), [pdf](linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf), [video demo](https://player.vimeo.com/video/595343322?h=97da0c4bb5).
 
-> [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](assets/lrpbsckcl.pdf)
+# Presented
 
-```{r}
-htmltools::HTML("<hr>")
-```
+  - Turing Climate Informatics <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_refs_adlcl.pdf" target="_blank"> references </a> - 23-04-2024
+  
+  - DASH Centre Launch <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_refs_adlcl.pdf" target="_blank"> references </a> - 26-03-2024
 
-### Interests
+  - environmental epidemiology module 
+  <a href="linked_content/pres_bigdataenvepi_2024/bdee_slides.html" target="_blank">lecture slides</a>  big data in environmental epidemiology - 14-03-2024
+  
+  - LSHTM R Users Group  <a href="linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf" target="_blank"> R packages presentation </a> - 18-11-2022
+  
+# Location
 
--   Environmental Modelling, Epidemiology
--   R, Open Science, Free Software Principles, Science Fiction, Rational Optimism, Hiking, Meadows, Orcas, Volleyball, Mountains, ...
+Madrid, Varese, London.
+
+# Interest
+
+-   Predictive modelling, Exposure assessment, Epidemiology
+-   Neuroscience, Hiking, Sci-fi, Meadows, Orcas, Volleyball, Mountains, ...
+
+# Unclassified
+
+[The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](assets/lrpbsckcl.pdf).
+

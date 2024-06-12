@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Research Plan</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<style type="text/css">
+
+/* These two bits + first @media below Enable Snap Slides*/
+:root { --slide-width: 100%; }
+
+html { scroll-snap-type: y mandatory; }
+
+.spacer { height: 30vh; }
+
+@media (min-width: 992px) {
+ :root { --slide-width: 100%; }
+  body { font-size: 1.6em; }
+  .slide {
+    min-height: 100vh;
+    scroll-snap-align: start;
+  }
+  li li { font-size: .9em; }
+  .footnotes {
+    position: absolute;
+    bottom: 1em;
+    font-size: .8em;
+  }
+}
+
+/* This modifies the document + slides */
+/*  Set global styles for body */
+body {
+  font-family: "Open Sans", sans-serif; /* Main font for readability */
+  width: 161.8033988749vh;
+ /* max-width: 1900px;  Restrict maximum width to enhance readability */
+  margin: auto; /* Center the body content horizontally */
+  padding: 1em; /* Padding around the content */
+  line-height: 1.5; /* Line height for better text readability */
+  box-sizing: border-box; /* Include padding and border in the element's width */
+  background-color:#ffffcc;
+}
+
+/* Set specific fonts for headings to distinguish them from body text */
+h1, h2, h3, h4 {
+  font-family: "Yanone Kaffeesatz", sans-serif; /* Stylish font for headers */
+}
+
+a { color: #eb4a47; }
+
+/* TOC set if appears in frontmatter*/
+#TOC { 
+  columns: 2;
+  font-size: 0.7em;
+}
+#TOC::before {
+  content: "Table of Contents";
+  font-size: 0.8em;
+  font-weight: bold;
+  display: block;
+  border-bottom: 0.8px solid #666;
+}
+#TOC li ul li a {
+  color: #666;
+  padding-left: 0.2em;
+  text-decoration: none;
+}
+
+/* This modifies the slides */
+.slide {
+  padding: 1em;
+  position: relative;
+}
+.slide > h2, .slide > h3 { margin-top: unset; }
+body {
+  max-width: fit-content;
+  padding: 0;
+}
+
+/* this one does not center the title slide or the in present mode*/
+.center { text-align: center; }
+
+/* this one works on title slide -  center text, center content, column layout */
+.frontmatter, .middle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1>Research Plan</h1></div>
+<div class="author"><h2><a href="https://adlcruz.github.io">Arturo de la Cruz Libardi</a></h2></div>
+<div class="date"><h3>2024-05-12</h3></div>
+</div>
+<div class="body">
+<div id="TOC">
+<ul class="numbered">
+<li><a href="#set-up"><span class="section-number">1.</span> Set-up</a></li>
+<li><a href="#introduction"><span class="section-number">2.</span> Introduction</a>
+<ul>
+<li><a href="#task-and-areas-of-research"><span class="section-number">2.1</span> Task and Areas of Research</a>
+<ul>
+<li><a href="#data-driven-modelling-of-airborne-pollutants-as-environmental-exposure"><span class="section-number">2.1.1</span> Data-driven modelling of airborne pollutants as environmental exposure</a></li>
+<li><a href="#geodata-science-sptml-artefact-validation-exposure-modelling"><span class="section-number">2.1.2</span> Geodata Science, SPTML, Artefact validation, Exposure modelling</a></li>
+</ul>
+</li>
+<li><a href="#environment-and-health-modelling"><span class="section-number">2.2</span> Environment and Health Modelling</a>
+<ul>
+<li><a href="#environmental-epidemiology-motivation"><span class="section-number">2.2.1</span> Environmental Epidemiology Motivation</a></li>
+<li><a href="#methodological-motivation"><span class="section-number">2.2.2</span> Methodological Motivation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#aim-and-objectives"><span class="section-number">3.</span> Aim and Objectives</a>
+<ul>
+<li><a href="#air-pollution-observations-in-great-britain-are-sparse-and-clustered-we-aim-to-use-machine-learning-multi-scale-feature-engineering-and-experimental-validation-techniques-to-produce-highly-resolved-confident-and-virtually-spatially-continuous-estimates-of-air-pollutants"><span class="section-number">3.1</span> Air pollution observations in Great Britain are sparse and clustered; we aim to use machine-learning, multi-scale feature engineering, and experimental validation techniques to produce highly resolved, confident and virtually spatially continuous estimates of air pollutants.</a></li>
+<li><a href="#objectives"><span class="section-number">3.2</span> Objectives</a>
+<ul>
+<li><a href="#identify-and-gather-data"><span class="section-number">3.2.1</span> Identify and gather data</a></li>
+<li><a href="#apply-novel-feature-engineering-methods"><span class="section-number">3.2.2</span> Apply novel feature engineering methods</a></li>
+<li><a href="#develop-machine-learning-methods-to-obtain-air-pollution-estimates"><span class="section-number">3.2.3</span> Develop machine-learning methods to obtain air pollution estimates</a></li>
+<li><a href="#compare-and-apply-evaluation-methods-to-the-artefacts-and-the-linked-data"><span class="section-number">3.2.4</span> Compare and apply evaluation methods to the artefacts and the linked data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#materials-and-methods"><span class="section-number">4.</span> Materials and Methods</a>
+<ul>
+<li><a href="#data"><span class="section-number">4.1</span> Data</a>
+<ul>
+<li><a href="#observations"><span class="section-number">4.1.1</span> Observations</a></li>
+<li><a href="#ctm"><span class="section-number">4.1.2</span> CTM</a></li>
+<li><a href="#environmental-reanalysis"><span class="section-number">4.1.3</span> Environmental reanalysis</a></li>
+<li><a href="#land-features-use-cover"><span class="section-number">4.1.4</span> Land-features (-use, -cover)</a></li>
+<li><a href="#vector"><span class="section-number">4.1.5</span> Vector</a></li>
+<li><a href="#satellite-data"><span class="section-number">4.1.6</span> Satellite data</a></li>
+<li><a href="#other-gridded"><span class="section-number">4.1.7</span> Other (gridded)</a></li>
+</ul>
+</li>
+<li><a href="#feature-engineering"><span class="section-number">4.2</span> Feature Engineering</a>
+<ul>
+<li><a href="#pointwise-extraction-for-hyperlocal-feature-capture-and-embedded-distance-weighting"><span class="section-number">4.2.1</span> Pointwise extraction for hyperlocal feature capture and embedded distance weighting</a></li>
+<li><a href="#satellite-signal-reconstruction"><span class="section-number">4.2.2</span> Satellite Signal Reconstruction</a></li>
+<li><a href="#data-fusion"><span class="section-number">4.2.3</span> Data Fusion</a></li>
+</ul>
+</li>
+<li><a href="#machine-learning"><span class="section-number">4.3</span> Machine-learning</a>
+<ul>
+<li><a href="#background-and-established-models"><span class="section-number">4.3.1</span> Background and established models</a></li>
+<li><a href="#nnls-super-learner"><span class="section-number">4.3.2</span> NNLS Super Learner</a></li>
+<li><a href="#deep-learning"><span class="section-number">4.3.3</span> Deep Learning</a></li>
+<li><a href="#computational-resources"><span class="section-number">4.3.4</span> Computational Resources</a></li>
+</ul>
+</li>
+<li><a href="#artefact-assessment"><span class="section-number">4.4</span> Artefact Assessment</a>
+<ul>
+<li><a href="#model-performance-metrics"><span class="section-number">4.4.1</span> Model Performance Metrics</a></li>
+<li><a href="#map-and-model-validity"><span class="section-number">4.4.2</span> Map and Model Validity</a></li>
+<li><a href="#health-data-linkage"><span class="section-number">4.4.3</span> Health-Data Linkage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#discussion"><span class="section-number">5.</span> Discussion</a>
+<ul>
+<li><a href="#recap"><span class="section-number">5.1</span> Recap</a></li>
+<li><a href="#graphical-summary"><span class="section-number">5.2</span> Graphical Summary</a></li>
+<li><a href="#outputs"><span class="section-number">5.3</span> Outputs</a>
+<ul>
+<li><a href="#high-resolution-mapping-of-nitrogen-dioxide-and-particulate-matter-in-great-britain-2003-2021-with-multi-stage-data-reconstruction-and-ensemble-machine-learning-methods"><span class="section-number">5.3.1</span> High resolution mapping of nitrogen dioxide and particulate matter in Great Britain (2003-2021) with multi-stage data reconstruction and ensemble machine learning methods.</a></li>
+<li><a href="#grid-versus-point-buffer-based-methods-for-the-prediction-of-environmental-expousre"><span class="section-number">5.3.2</span> Grid- versus Point-buffer based methods for the prediction of environmental expousre</a></li>
+<li><a href="#exploring-the-data-fusion-approach"><span class="section-number">5.3.3</span> Exploring the data fusion approach</a></li>
+<li><a href="#evaluation-validation-of-spatiotemporal-environmental-exposure-maps"><span class="section-number">5.3.4</span> Evaluation (validation?) of spatiotemporal environmental exposure maps</a></li>
+<li><a href="#same-thing-but-focusing-on-performance-perhaps-they-need-not-be-separate"><span class="section-number">5.3.5</span> Same thing but focusing on performance? Perhaps they need not be separate</a></li>
+<li><a href="#new-point-buffer-based-ml-model"><span class="section-number">5.3.6</span> New point-buffer based ML model</a></li>
+<li><a href="#using-the-datasets-produced-health-data-linkage"><span class="section-number">5.3.7</span> Using the datasets produced: Health data linkage</a></li>
+</ul>
+</li>
+<li><a href="#proposed-structure"><span class="section-number">5.4</span> Proposed Structure</a></li>
+<li><a href="#proposed-timeline"><span class="section-number">5.5</span> Proposed Timeline</a></li>
+<li><a href="#funding"><span class="section-number">5.6</span> Funding</a></li>
+</ul>
+</li>
+<li><a href="#conclusion"><span class="section-number">6.</span> Conclusion</a>
+<ul>
+<li><a href="#contingencies-and-plans"><span class="section-number">6.1</span> Contingencies and Plans</a></li>
+<li><a href="#overview"><span class="section-number">6.2</span> Overview</a></li>
+<li><a href="#importance-motivation"><span class="section-number">6.3</span> Importance/Motivation</a></li>
+</ul>
+</li>
+<li><a href="#references"><span class="section-number">7.</span> References</a></li>
+<li><a href="#resources"><span class="section-number">8.</span> Resources</a></li>
+</ul>
+</div>
+<h1 id="set-up"><span class="section-number">1.</span> Set-up</h1>
+<hr />
+<h1 id="introduction"><span class="section-number">2.</span> Introduction</h1>
+<h2 id="task-and-areas-of-research"><span class="section-number">2.1</span> Task and Areas of Research</h2>
+<h3 id="data-driven-modelling-of-airborne-pollutants-as-environmental-exposure"><span class="section-number">2.1.1</span> Data-driven modelling of airborne pollutants as environmental exposure</h3>
+<h3 id="geodata-science-sptml-artefact-validation-exposure-modelling"><span class="section-number">2.1.2</span> Geodata Science, SPTML, Artefact validation, Exposure modelling</h3>
+<h2 id="environment-and-health-modelling"><span class="section-number">2.2</span> Environment and Health Modelling</h2>
+<h3 id="environmental-epidemiology-motivation"><span class="section-number">2.2.1</span> Environmental Epidemiology Motivation</h3>
+<h4 id="exposure-data-provision"><span class="section-number">2.2.1.1</span> Exposure Data Provision</h4>
+<p>Assigning the right exposure is a critical step in epidemiological studies, to do this exposure maps are needed.
+We take airborne pollutants to be distributed daily across T and on a continuous XY plane and create such maps.</p>
+<h3 id="methodological-motivation"><span class="section-number">2.2.2</span> Methodological Motivation</h3>
+<h4 id="explore-feature-engineering-for-the-modelling-task"><span class="section-number">2.2.2.1</span> Explore feature engineering for the modelling task</h4>
+<p>For efficiency, performance, better observation characterization.</p>
+<h4 id="improve-on-existing-models"><span class="section-number">2.2.2.2</span> Improve on existing models</h4>
+<p>In terms of: predictive performance in hard to model areas; confidence by providing uncertainty in predictions; coverage by ensuring our model is valid for nation-scale predictions.</p>
+<h4 id="apply-experimental-methods-for-model-evaluation"><span class="section-number">2.2.2.3</span> Apply experimental methods for model evaluation</h4>
+<p>On top of established methods, we use experimental methods maybe an ad-hoc measuring campaign (C&amp;RT)</p>
+<!--# class="extend" -->
+<hr />
+<h1 id="aim-and-objectives"><span class="section-number">3.</span> Aim and Objectives</h1>
+<h2 id="air-pollution-observations-in-great-britain-are-sparse-and-clustered-we-aim-to-use-machine-learning-multi-scale-feature-engineering-and-experimental-validation-techniques-to-produce-highly-resolved-confident-and-virtually-spatially-continuous-estimates-of-air-pollutants"><span class="section-number">3.1</span> Air pollution observations in Great Britain are sparse and clustered; we aim to use machine-learning, multi-scale feature engineering, and experimental validation techniques to produce highly resolved, confident and virtually spatially continuous estimates of air pollutants.</h2>
+<p>Air pollution observations in Great Britain are sparse and clustered and approximate very poorly the air pollution exposure of many subpopulations within the monitored area. Exposure assessment carried out via areal mean or nearest observed values have obvious limitations; assessments relying on estimates produced by physics-based analyses, geostatistical models using local features, and hybrids only partially address them and bring about further limitations. We aim to use machine-learning, multi-scale feature engineering, and experimental validation techniques to produce highly resolved, virtually spatially continuous and confident estimates of air pollutants, and briefly showcase their application in environment and health studies.</p>
+<!--# class="extend" -->
+<hr />
+<h2 id="objectives"><span class="section-number">3.2</span> Objectives</h2>
+<h3 id="identify-and-gather-data"><span class="section-number">3.2.1</span> Identify and gather data</h3>
+<h3 id="apply-novel-feature-engineering-methods"><span class="section-number">3.2.2</span> Apply novel feature engineering methods</h3>
+<h3 id="develop-machine-learning-methods-to-obtain-air-pollution-estimates"><span class="section-number">3.2.3</span> Develop machine-learning methods to obtain air pollution estimates</h3>
+<h3 id="compare-and-apply-evaluation-methods-to-the-artefacts-and-the-linked-data"><span class="section-number">3.2.4</span> Compare and apply evaluation methods to the artefacts and the linked data</h3>
+<hr />
+<h1 id="materials-and-methods"><span class="section-number">4.</span> Materials and Methods</h1>
+<hr />
+<h2 id="data"><span class="section-number">4.1</span> Data</h2>
+<h3 id="observations"><span class="section-number">4.1.1</span> Observations</h3>
+<p>Hourly point values from various providers</p>
+<h3 id="ctm"><span class="section-number">4.1.2</span> CTM</h3>
+<p>EMEP4UK</p>
+<h3 id="environmental-reanalysis"><span class="section-number">4.1.3</span> Environmental reanalysis</h3>
+<p>ERA5, EAC4</p>
+<h3 id="land-features-use-cover"><span class="section-number">4.1.4</span> Land-features (-use, -cover)</h3>
+<p>NDVI, Imperviousness, Land cover, Temp</p>
+<h3 id="vector"><span class="section-number">4.1.5</span> Vector</h3>
+<p>LSOA, road, track, canals,</p>
+<h3 id="satellite-data"><span class="section-number">4.1.6</span> Satellite data</h3>
+<p>Terra-Aqua (MODIS), Aura (OMI), LSAT, Sentinels, Umbra</p>
+<h3 id="other-gridded"><span class="section-number">4.1.7</span> Other (gridded)</h3>
+<p>PCM, pop. density, nightlight</p>
+<!--# class="extend" -->
+<hr />
+<h2 id="feature-engineering"><span class="section-number">4.2</span> Feature Engineering</h2>
+<h3 id="pointwise-extraction-for-hyperlocal-feature-capture-and-embedded-distance-weighting"><span class="section-number">4.2.1</span> Pointwise extraction for hyperlocal feature capture and embedded distance weighting</h3>
+<p>Extending multi-buffer feature representation to carry out predictions at a virtually continuous resolution</p>
+<h3 id="satellite-signal-reconstruction"><span class="section-number">4.2.2</span> Satellite Signal Reconstruction</h3>
+<p>Using established and new methods to leverage satellite data</p>
+<h3 id="data-fusion"><span class="section-number">4.2.3</span> Data Fusion</h3>
+<p>Exploring an experimental data fusion approach using point observations and represented environment to downscale a physical model</p>
+<hr />
+<h2 id="machine-learning"><span class="section-number">4.3</span> Machine-learning</h2>
+<h3 id="background-and-established-models"><span class="section-number">4.3.1</span> Background and established models</h3>
+<p>Smog effects, measurements at points sources, emission-dispersion models, chemical-transport models, land-use regression, machine-learning, hybrid models.</p>
+<h3 id="nnls-super-learner"><span class="section-number">4.3.2</span> NNLS Super Learner</h3>
+<p>$$\mathbf{f(x)}=\sum^m_i w_i f_i(x);\text{ subject to }w_i\leq1\text{ where }\mathbf{f_i(x)=ML_i(Features)}$$ $$NNLS(x)= \mathbf{X_{RF}}{RF(x)} + \mathbf{X_{XGB}}{XGB(x)} +\mathbf{X_{LGBM}}{LGBM(x)} +\mathbf{X_{RIDGE}}{RIDGE(x)} +\mathbf{X_{lASSO}}{LASSO(x)}$$</p>
+<h3 id="deep-learning"><span class="section-number">4.3.3</span> Deep Learning</h3>
+<p>DL is a ML with a neural network architecture of \(\geq\) 1 layers, this is also known as a Multilayer Perceptron. The high number of parameters (weights) in the network are optimized via backpropagation. These methods can learn associations in high-dimensional space and predict skillfully. Convolutional and Recurrent architectures are developments aimed at specializing networks in spatial and temporal learning tasks, although they are used in many other applications.</p>
+<h3 id="computational-resources"><span class="section-number">4.3.4</span> Computational Resources</h3>
+<p>Implementing a large-enough neural network comes with considerable challenges, especially in scripting, High Performance Computing, optimization.</p>
+<!--# class="extend" -->
+<hr />
+<h2 id="artefact-assessment"><span class="section-number">4.4</span> Artefact Assessment</h2>
+<h3 id="model-performance-metrics"><span class="section-number">4.4.1</span> Model Performance Metrics</h3>
+<p>Predictive models performance must be estimated with a range of performance metrics, some aimed at evaluating distinct spatial and temporal prediction dimensions</p>
+<h3 id="map-and-model-validity"><span class="section-number">4.4.2</span> Map and Model Validity</h3>
+<p>Mapping models must be carefully evaluated before final training. When cross-validating the model, the grouping of observations into folds must be informed by the feature values among and the geographical distance between the training points. Potentially creating the folds to best reproduce the task within the modelling domain.</p>
+<h3 id="health-data-linkage"><span class="section-number">4.4.3</span> Health-Data Linkage</h3>
+<p>Spatiotemporal maps may be linked with individual and area-aggregated health data to create exposure profiles.</p>
+<hr />
+<h1 id="discussion"><span class="section-number">5.</span> Discussion</h1>
+<hr />
+<h2 id="recap"><span class="section-number">5.1</span> Recap</h2>
+<ul>
+<li>This project concerns regional high-resolution air pollution modelling.</li>
+<li>It is taken as a whole, from the selection and processing of environmental data, to the prediction and linkage for epidemiological analysis.</li>
+<li>We introduce novel methods and test experimental approaches throughout.</li>
+<li>The spatiotemporal air pollution data produced are novel and may contribute significantly to environmental health research.</li>
+</ul>
+<hr />
+<h2 id="graphical-summary"><span class="section-number">5.2</span> Graphical Summary</h2>
+<hr />
+<h2 id="outputs"><span class="section-number">5.3</span> Outputs</h2>
+<h3 id="high-resolution-mapping-of-nitrogen-dioxide-and-particulate-matter-in-great-britain-2003-2021-with-multi-stage-data-reconstruction-and-ensemble-machine-learning-methods"><span class="section-number">5.3.1</span> High resolution mapping of nitrogen dioxide and particulate matter in Great Britain (2003-2021) with multi-stage data reconstruction and ensemble machine learning methods.</h3>
+<p>A multi-stage framework was used to reconstruct  air pollutant concentration at ground level. Augmenting scarce observational data, gap-filling satellite data, a super-learner model which used a non-negative least squares model to aggregate predictions from regularized lms, gradient descent and tree-based learners. Resulting in operational 1kmx1km daily datasets.</p>
+<h3 id="grid-versus-point-buffer-based-methods-for-the-prediction-of-environmental-expousre"><span class="section-number">5.3.2</span> Grid- versus Point-buffer based methods for the prediction of environmental expousre</h3>
+<p>We compare two reconstruction models, identical in modelling engine, source data, and model domain, while varying the core of the feature engineering process. We hypothesize that focusing on the observation points and their immediate surroundings provides an immediate increase in model performance. We explore the drawbacks.</p>
+<h3 id="exploring-the-data-fusion-approach"><span class="section-number">5.3.3</span> Exploring the data fusion approach</h3>
+<p>We compare a full modelling approach with a data fusion one. Where a source dataset is processed to higher granularity with chosen features and observational data.</p>
+<h3 id="evaluation-validation-of-spatiotemporal-environmental-exposure-maps"><span class="section-number">5.3.4</span> Evaluation (validation?) of spatiotemporal environmental exposure maps</h3>
+<p>We use a range of methods to evaluate the generalizability of two air pollution models fitted using a gridded and point-buffer based approach. We contrast established techniques such as random and spatial cross-validation, with novel methods and an ecological approach. It would be great to collaborate with Canal and River Trust, ideally we take some measurements (happy to do it myself), at different spots alonf one of their populated canals, marking the density of narrowboats, and weather conditions (not necessary as they can be recovered). Then we can see two things. Is the area around narrowboats truly extra-polluted? Do our models in any way reflect this?</p>
+<h3 id="same-thing-but-focusing-on-performance-perhaps-they-need-not-be-separate"><span class="section-number">5.3.5</span> Same thing but focusing on performance? Perhaps they need not be separate</h3>
+<h3 id="new-point-buffer-based-ml-model"><span class="section-number">5.3.6</span> New point-buffer based ML model</h3>
+<h3 id="using-the-datasets-produced-health-data-linkage"><span class="section-number">5.3.7</span> Using the datasets produced: Health data linkage</h3>
+<p>We showcase linkage applications and compare the exposures derived from linking different model outputs to the same health-data.</p>
+<!--# class="extend" -->
+<hr />
+<h2 id="proposed-structure"><span class="section-number">5.4</span> Proposed Structure</h2>
+<p>The dissertation will be structured similarly to this proposal: first a thorough section on the background, research questions, and results; then the attached articles produced.</p>
+<h2 id="proposed-timeline"><span class="section-number">5.5</span> Proposed Timeline</h2>
+<p>The project may be concluded by 2027 allowing for a write-up period.</p>
+<h2 id="funding"><span class="section-number">5.6</span> Funding</h2>
+<p>The project is self-funded. Funds are secured via employment salary.</p>
+<!--# class="extend";-->
+<hr />
+<h1 id="conclusion"><span class="section-number">6.</span> Conclusion</h1>
+<h2 id="contingencies-and-plans"><span class="section-number">6.1</span> Contingencies and Plans</h2>
+<h2 id="overview"><span class="section-number">6.2</span> Overview</h2>
+<h2 id="importance-motivation"><span class="section-number">6.3</span> Importance/Motivation</h2>
+<hr />
+<h1 id="references"><span class="section-number">7.</span> References</h1>
+<hr />
+<h1 id="resources"><span class="section-number">8.</span> Resources</h1>
+<p><a href="#monitors-networks">All monitoring sites</a></p>
+<p><a href="#observations-density">Yearly monitoring sites</a></p>
+<p><a href="#observations-series">Observation series</a></p>
+<p><a href="#longterm-trend">Long-term trend</a></p>
+<hr />
+<h5 id="monitors-networks"><span class="section-number">8.0.0.0.1</span> monitors-networks</h5>
+<iframe src="html_assets/monitor-networks.html"; style="width:100%; height:600px;"></iframe>
+<hr />
+<h5 id="observations-density"><span class="section-number">8.0.0.0.2</span> observations-density</h5>
+<iframe src="html_assets/obs-popdens.html"; style="width:100%; height:600px;"></iframe>
+<hr />
+<h5 id="observations-series"><span class="section-number">8.0.0.0.3</span> observations-series</h5>
+<iframe src="html_assets/threeseries_pm.html"; style="width:100%; height:600px;"></iframe>
+<hr />
+<h5 id="longterm-trend"><span class="section-number">8.0.0.0.4</span> longterm-trend</h5>
+<iframe src="html_assets/longtrends.html"; style="width:100%; height:600px;"></iframe>
+</div>
+<script src="https://cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+<script>
+// copied from snap.js
+(function(d) {
+  let p = d.body;  // container of slides; assume <body> for now
+  const s1 = ':scope > hr:not([class])', s2 = ':scope > h2';
+  // find a container that has at least n "slides"
+  function findContainer(s, n = 1) {
+    if (p.querySelectorAll(s).length >= n) return true;
+    // if body doesn't contain headings or <hr>s, look into children
+    for (let i = 0; i < p.children.length; i++) {
+      if (p.children[i].querySelectorAll(s).length >= n) {
+        p = p.children[i]; break;
+      }
+    }
+    return false;
+  }
+  function newEl(tag, cls) {
+    const el = d.createElement(tag);
+    if (cls) el.className = cls;
+    return el;
+  }
+  if (!findContainer(s1, 3)) {
+    // if not enough <hr>s found in children; look for <h2> instead
+    if (p.tagName === 'BODY') {
+      // not enough h2 found, this page is not appropriate for slides
+      if (!findContainer(s2) && p.tagName === 'BODY') return;
+      p.querySelectorAll(s2).forEach(h2 => h2.before(newEl('hr')));
+    }
+  }
+  p.classList.add('slide-container');
+  // add 'slide' class to the frontmatter div and toc
+  ['.frontmatter', '#TOC'].forEach(s => {
+    d.body.querySelector(s)?.classList.add('slide');
+  });
+
+  function newSlide(s) {
+    return (s?.innerText === '') ? s : newEl('div', 'slide');
+  }
+  function isSep(el) {
+    return el.tagName === 'HR' && el.attributes.length === 0;
+  }
+  let el = p.firstElementChild; if (isSep(el)) el.remove();
+  el = p.firstElementChild; if (!el) return;
+  let s = newSlide(); el.before(s);
+  while (true) {
+    let el = s.nextSibling;
+    if (!el) break;
+    // remove slide separators (<hr>) and create new slide
+    if (isSep(el)) {
+      s = newSlide(s);
+      el.before(s); el.remove();
+    } else if (el.classList?.contains('slide')) {
+      s = newSlide(s);
+      el.after(s);
+    } else {
+      s.append(el);
+    }
+  }
+  function setAttr(el, attr) {
+    const m = newEl('div');
+    m.innerHTML = `<div ${attr}></div>`;
+    const attrs = m.firstElementChild.attributes;
+    for (let i = 0; i < attrs.length; i++) {
+      let a = attrs[i];
+      el.setAttribute(a.name, a.value);
+    }
+    m.remove();
+  }
+  const slides = d.querySelectorAll('div.slide'), N = slides.length,
+        tm = d.querySelector('span.timer'), fn = d.querySelector('.footnotes');
+  slides.forEach((s, i) => {
+    // append footnotes
+    if (fn) s.querySelectorAll('.footnote-ref > a[href^="#fn"]').forEach(a => {
+      const li = fn.querySelector('li' + a.getAttribute('href'));
+      if (!li) return;
+      let f = s.querySelector('section.footnotes');
+      if (!f) {
+        f = newEl('section', 'footnotes'); s.append(f);
+      }
+      f.append(li);
+      li.firstElementChild?.insertAdjacentHTML('afterbegin', `[${a.innerHTML}] `);
+      li.outerHTML = li.innerHTML;
+    });
+    // add a timer
+    s.append(tm ? tm.cloneNode() : newEl('span', 'timer'));
+    // add page numbers
+    const n = newEl('span', 'page-number');
+    n.innerText = i + 1 + '/' + N;
+    n.onclick = e => location.hash = i + 1;
+    s.append(n);
+    // apply slide attributes in <!--# -->
+    for (let k in s.childNodes) {
+      const node = s.childNodes[k];
+      if (node.nodeType !== Node.COMMENT_NODE) continue;
+      let t = node.textContent;
+      if (!/^#/.test(t)) continue;
+      t = t.replace(/^#/, '');
+      const r = /[\s\n]class="([^"]+)"/, m = t.match(r);
+      if (m) {
+        t = t.replace(r, '').trim();
+        s.className += ' ' + m[1];
+      }
+      if (t) setAttr(s, t);
+      break;
+    }
+    s.classList.contains('extend') && s.append(newEl('div', 'spacer fade'));
+    location.hash === ('#' + (i + 1)) && s.scrollIntoView();
+    s.addEventListener('click', e => {
+      if (!e.altKey) return;
+      d.body.classList.toggle('overview');
+      setTimeout(() => e.target.scrollIntoView(), 100);
+    });
+  });
+  [...d.querySelectorAll('a.footnote-backref'), fn, tm].forEach(el => el?.remove());
+  const tms = d.querySelectorAll('span.timer'), t1 = 1000 * tms[0].dataset.total;
+  let t0;
+  function startTimers() {
+    t0 = new Date();
+    setInterval(setTimers, 1000);
+  }
+  function setTimers() {
+    let t = (new Date() - t0);
+    if (t1) t = t1 - t;
+    const t2 = new Date(Math.abs(t)).toISOString().substr(11, 8).replace(/^00:/, '');
+    tms.forEach(el => {
+      el.innerText = t2;
+      if (t < 0) el.style.display = el.style.display === 'none' ? '' : 'none';
+    });
+  }
+  // press f for fullscreen mode
+  d.addEventListener('keyup', (e) => {
+    if (e.target !== d.body) return;
+    e.key === 'f' && d.documentElement.requestFullscreen();
+    e.key === 'o' && d.body.classList.toggle('overview');
+    e.key === 'm' && d.body.classList.toggle('mirrored');
+    sessionStorage.setItem('body-class', d.body.className);
+  });
+  // start timer on fullscreen
+  d.onfullscreenchange = (e) => d.fullscreenElement && !t0 && startTimers();
+  tms.forEach(el => el.addEventListener('click', e => startTimers()));
+  // restore previsouly saved body class
+  const bc = sessionStorage.getItem('body-class');
+  if (bc) d.body.className += ' ' + bc;
+})(document);
+</script>
+</body>
+</html>
