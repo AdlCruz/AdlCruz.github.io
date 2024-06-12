@@ -1,5 +1,5 @@
 ---
-title: https://adlcruz.github.io/ 
+title: '[Arturo de la Cruz Libardi](https://adlcruz.github.io/)'
 description: A personal website
 output: html_document
 css: "relax.css" # "style.css"
@@ -14,19 +14,19 @@ library(rmarkdown);library(markdown);library(htmltools)
 htmltools::HTML("<br>")
 ```
 
-Work and study on improving the availability and quality of air pollution data for epidemiological analyses with statistical learning methods at the [London School of Hygiene and Tropical Medicine](www.lshtm.ac.uk) and [*Environment and Health Modelling (EHM) Lab*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab).
+Work and study on improving the quality and availability of ambient air pollution exposure data for epidemiological analyses with statistical learning methods at the [London School of Hygiene and Tropical Medicine](www.lshtm.ac.uk) and [*Environment and Health Modelling (EHM) Lab*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab).
 
 ```{r}
 htmltools::HTML("<hr>")
 ```
 
-[https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo)
+<https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo>
 
-[https://orcid.org/0009-0001-1543-7999](https://orcid.org/0009-0001-1543-7999)
+<https://orcid.org/0009-0001-1543-7999>
 
-[github AdlCruz](https://github.com/AdlCruz)\
+[github AdlCruz](https://github.com/AdlCruz "Code")
 
-[\@dlCruzArturo](https://twitter.com/dlCruzArturo)\
+[\@dlCruzArturo](https://twitter.com/dlCruzArturo "Social")\
 
 ```{r}
 htmltools::HTML("<hr>")
@@ -34,30 +34,41 @@ htmltools::HTML("<hr>")
 
 # R packages
 
-**[hipmapp](https://ehm-lab.github.io/hipmapp/) is a health impact projection mapping dashboard** developed within the broader [EXHAUSTION](https://climate-adapt.eea.europa.eu/en/metadata/publications/exhaustion-white-paper-exposure-to-heat-and-air-pollution-in-europe#:~:text=The%20EU%2Dfunded%20EXHAUSTION%20project,pollution%20and%20identify%20adaptation%20strategies) EU funded [project](https://cordis.europa.eu/project/id/820655), and omg it got tweeted as well wow look at that
+[**hipmapp**](https://ehm-lab.github.io/hipmapp/) **is a health impact projection mapping dashboard** developed within the broader [EXHAUSTION](https://climate-adapt.eea.europa.eu/en/metadata/publications/exhaustion-white-paper-exposure-to-heat-and-air-pollution-in-europe#:~:text=The%20EU%2Dfunded%20EXHAUSTION%20project,pollution%20and%20identify%20adaptation%20strategies) EU funded [project](https://cordis.europa.eu/project/id/820655), and omg it got tweeted as well wow look at that
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/ProjectHighlight?src=hash&amp;ref_src=twsrc%5Etfw">#ProjectHighlight</a><a href="https://twitter.com/ExhaustionH2020?ref_src=twsrc%5Etfw">@ExhaustionH2020</a> project has come to an end. <br>Check their interactive tool on how climate change will affect human lives in urban settings 👉 <a href="https://t.co/czUSmjnfts">https://t.co/czUSmjnfts</a><a href="https://twitter.com/hashtag/H2020?src=hash&amp;ref_src=twsrc%5Etfw">#H2020</a> <a href="https://twitter.com/hashtag/Climate?src=hash&amp;ref_src=twsrc%5Etfw">#Climate</a> <a href="https://twitter.com/hashtag/EU?src=hash&amp;ref_src=twsrc%5Etfw">#EU</a> <a href="https://twitter.com/hashtag/Research?src=hash&amp;ref_src=twsrc%5Etfw">#Research</a> <a href="https://twitter.com/hashtag/ResearchImpactEU?src=hash&amp;ref_src=twsrc%5Etfw">#ResearchImpactEU</a> <a href="https://t.co/GECEyd86kl">pic.twitter.com/GECEyd86kl</a></p>&mdash; CINEA🇪🇺 (@cinea_eu) <a href="https://twitter.com/cinea_eu/status/1759871919476576732?ref_src=twsrc%5Etfw">February 20, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
 
-_moving on_
+<p lang="en" dir="ltr">
 
-**[rctapi](https://adlcruz.github.io/rctapi/) + [rctexplorer](https://adlcruz.github.io/rctexplorer/) for R based interaction with the clinicaltrials.gov online database**
-Use these two to search filter and download records from the website and load data to an app for interactive visualisation. Feel free to use/copy/improve on the [source code](https://github.com/AdlCruz/rctapi).
+<a href="https://twitter.com/hashtag/ProjectHighlight?src=hash&amp;ref_src=twsrc%5Etfw">#ProjectHighlight</a><a href="https://twitter.com/ExhaustionH2020?ref_src=twsrc%5Etfw">@ExhaustionH2020</a> project has come to an end. <br>Check their interactive tool on how climate change will affect human lives in urban settings 👉 <a href="https://t.co/czUSmjnfts">https://t.co/czUSmjnfts</a><a href="https://twitter.com/hashtag/H2020?src=hash&amp;ref_src=twsrc%5Etfw">#H2020</a> <a href="https://twitter.com/hashtag/Climate?src=hash&amp;ref_src=twsrc%5Etfw">#Climate</a> <a href="https://twitter.com/hashtag/EU?src=hash&amp;ref_src=twsrc%5Etfw">#EU</a> <a href="https://twitter.com/hashtag/Research?src=hash&amp;ref_src=twsrc%5Etfw">#Research</a> <a href="https://twitter.com/hashtag/ResearchImpactEU?src=hash&amp;ref_src=twsrc%5Etfw">#ResearchImpactEU</a> <a href="https://t.co/GECEyd86kl">pic.twitter.com/GECEyd86kl</a>
 
-[Project report and use-case](assets/deanonlshtmdiss.pdf) \
+</p>
+
+— CINEA🇪🇺 (@cinea_eu) <a href="https://twitter.com/cinea_eu/status/1759871919476576732?ref_src=twsrc%5Etfw">February 20, 2024</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+*moving on*
+
+[**rctapi**](https://adlcruz.github.io/rctapi/) **+ [rctexplorer](https://adlcruz.github.io/rctexplorer/) for R based interaction with the clinicaltrials.gov online database** Use these two to search filter and download records from the website and load data to an app for interactive visualisation. Feel free to use/copy/improve on the [source code](https://github.com/AdlCruz/rctapi).
+
+[Project report and use-case](assets/deanonlshtmdiss.pdf)\
 
 Presented at the local R Users Group meeting [from 8:07]((https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0)), [pdf](linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf), [video demo](https://player.vimeo.com/video/595343322?h=97da0c4bb5).
 
 # Presented
 
-  - Turing Climate Informatics <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_refs_adlcl.pdf" target="_blank"> references </a> - 23-04-2024
-  
-  - DASH Centre Launch <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_refs_adlcl.pdf" target="_blank"> references </a> - 26-03-2024
+-   Turing Climate Informatics <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_refs_adlcl.pdf" target="_blank"> references </a> - 23-04-2024
 
-  - environmental epidemiology module 
-  <a href="linked_content/pres_bigdataenvepi_2024/bdee_slides.html" target="_blank">lecture slides</a>  big data in environmental epidemiology - 14-03-2024
-  
-  - LSHTM R Users Group  <a href="linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf" target="_blank"> R packages presentation </a> - 18-11-2022
-  
+-   DASH Centre Launch <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_refs_adlcl.pdf" target="_blank"> references </a> - 26-03-2024
+
+-   environmental epidemiology module <a href="linked_content/pres_bigdataenvepi_2024/bdee_slides.html" target="_blank">lecture slides</a> big data in environmental epidemiology - 14-03-2024
+
+-   LSHTM R Users Group <a href="linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf" target="_blank"> R packages presentation </a> - 18-11-2022
+
 # Location
 
 Madrid, Varese, London.
@@ -70,4 +81,3 @@ Madrid, Varese, London.
 # Unclassified
 
 [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](assets/lrpbsckcl.pdf).
-
