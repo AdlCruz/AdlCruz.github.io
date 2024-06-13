@@ -2,7 +2,7 @@
 body {
     width:100%;
     font-family: "Open Sans", "Noto Sans" 'Arial', sans-serif;
-    font-size: 2.3em;
+    font-size: 2em;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 /* Headings with a funky twist */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Yanone Kaffeesatz", "Merriweather", sans-serif;
-  font-size: 2em;
+  font-size: 1.6em;
   margin-top: 20px;
 }
 
