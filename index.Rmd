@@ -71,6 +71,9 @@ I was lucky enough to team-up with some excellent individuals and together we wo
 
 # Presented
 
+- ISEE Young in Rennes (coming soon)  
+<!-- [classic oral presentation](assets/adlcruz_ISEEYoung_Rennes_June2024.pdf) 5 - 7 June 2024 -->
+
 -   Turing Climate Informatics <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_refs_adlcl.pdf" target="_blank"> references </a> - 23-04-2024
 
 -   DASH Centre Launch <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_refs_adlcl.pdf" target="_blank"> references </a> - 26-03-2024
