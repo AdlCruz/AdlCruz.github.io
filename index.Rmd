@@ -81,10 +81,9 @@ I was lucky enough to team-up with some excellent individuals and together we wo
 
 # Attended
 
-- [Modern time series methods for public health and epidemiology (5 days course)](https://www.eepe.org/specialized-1-week-courses/)
+- [Summer School 2023: “Processing and visualizing large geospatial data using R, Python and Julia”](https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/) 28 August - 1 September 2023
 
-- [Summer School 2023: “Processing and visualizing large geospatial data using R, Python and Julia”](https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/)
-
+- [Modern time series methods for public health and epidemiology (5 days course)](https://www.eepe.org/specialized-1-week-courses/) 8-12 July 2022
 
 # Location
 
