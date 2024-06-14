@@ -32,7 +32,7 @@ htmltools::HTML("<hr>")
 htmltools::HTML("<hr>")
 ```
 
-# R packages
+# Recent projects
 
 [**hipmapp**](https://ehm-lab.github.io/hipmapp/) **is a health impact projection mapping dashboard** developed within the broader [EXHAUSTION](https://climate-adapt.eea.europa.eu/en/metadata/publications/exhaustion-white-paper-exposure-to-heat-and-air-pollution-in-europe#:~:text=The%20EU%2Dfunded%20EXHAUSTION%20project,pollution%20and%20identify%20adaptation%20strategies) EU funded [project](https://cordis.europa.eu/project/id/820655), and omg it got tweeted as well wow look at that
 
@@ -53,11 +53,21 @@ htmltools::HTML("<hr>")
 ```
 *moving on*
 
+# "Student" projects
+
 [**rctapi**](https://adlcruz.github.io/rctapi/) **+ [rctexplorer](https://adlcruz.github.io/rctexplorer/) for R based interaction with the clinicaltrials.gov online database** Use these two to search filter and download records from the website and load data to an app for interactive visualisation. Feel free to use/copy/improve on the [source code](https://github.com/AdlCruz/rctapi).
 
 [Project report and use-case](assets/deanonlshtmdiss.pdf)\
 
 Presented at the local R Users Group meeting [from 8:07]((https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0)), [pdf](linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf), [video demo](https://player.vimeo.com/video/595343322?h=97da0c4bb5).
+
+The MSc in Health Data Science at the London School of Hygiene and Tropical Medicine (2020-2021) was special. Not only were we the first cohort but we did it all without ever setting foot in the same building. The highlight of the year for me was the Data Challenge module which consisted of small teams taking on one large project each at the request of various stakeholders. 
+I was lucky enough to team-up with some excellent individuals and together we worked on a pressing issue for the Royal College of Surgeons. This topic still comes up in the news at the time of writing so I believe we were among the first to investigate this. Our final presentation and full report below.
+
+[Presentation](https://docs.google.com/presentation/d/1hhb2Vdc4sjZ0h_he6wof5eFAbhWj-NQB/edit#slide=id.p4)
+
+[Report](assets/datachallengeReport.pdf)
+
 
 # Presented
 
@@ -68,6 +78,13 @@ Presented at the local R Users Group meeting [from 8:07]((https://lshtm.cloud.pa
 -   environmental epidemiology module <a href="linked_content/pres_bigdataenvepi_2024/bdee_slides.html" target="_blank">lecture slides</a> big data in environmental epidemiology - 14-03-2024
 
 -   LSHTM R Users Group <a href="linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf" target="_blank"> R packages presentation </a> - 18-11-2022
+
+# Attended
+
+- [Modern time series methods for public health and epidemiology (5 days course)](https://www.eepe.org/specialized-1-week-courses/)
+
+- [Summer School 2023: “Processing and visualizing large geospatial data using R, Python and Julia”](https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/)
+
 
 # Location
 
