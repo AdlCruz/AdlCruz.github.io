@@ -11,90 +11,68 @@ library(rmarkdown);library(markdown);library(htmltools)
 ```
 
 ```{r}
-htmltools::HTML("<br>")
+htmltools::HTML("<hr>")
 ```
 
-Work and study on improving the quality and availability of ambient air pollution exposure data for epidemiological analyses with statistical learning methods at the [London School of Hygiene and Tropical Medicine](www.lshtm.ac.uk) and [*Environment and Health Modelling (EHM) Lab*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab).
+Work and study in the [*Environment and Health Modelling (EHM) Lab*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab) at the [London School of Hygiene and Tropical Medicine](https://www.lshtm.ac.uk). I am focusing on the modelling of airborne pollutants for exposure assessment and epidemiological research.
+
+[Work/Study profile](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo)
+
+[Publications/ORCID](https://orcid.org/0009-0001-1543-7999)
+
+[github](https://github.com/AdlCruz "Code")
 
 ```{r}
 htmltools::HTML("<hr>")
 ```
 
-<https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo>
+# R tools and packages
 
-<https://orcid.org/0009-0001-1543-7999>
+[**hipmapp**](https://ehm-lab.github.io/hipmapp/) **is a health impact projection mapping dashboard. [More on this](#hipmapp)**
 
-[github AdlCruz](https://github.com/AdlCruz "Code")
+[**rctapi**](https://adlcruz.github.io/rctapi/) **and [rctexplorer](https://adlcruz.github.io/rctexplorer/) are packages to interact with the [clinicaltrials.gov](https://www.clinicaltrials.gov/) online database. [More on these](#rctgovPacks).**
 
-[\@dlCruzArturo](https://twitter.com/dlCruzArturo "Social")\
+# Projects
 
-```{r}
-htmltools::HTML("<hr>")
-```
+###### hipmapp (2023) {#hipmapp}
 
-# Recent projects
+[hipmapp](https://ehm-lab.github.io/hipmapp/) is a [climate impact projections tool](https://climate-adapt.eea.europa.eu/en/metadata/tools/exhaustion-health-impact-projections-tool) developed as a subdeliverable of [EXHAUSTION](https://climate-adapt.eea.europa.eu/en/metadata/publications/exhaustion-white-paper-exposure-to-heat-and-air-pollution-in-europe#:~:text=The%20EU%2Dfunded%20EXHAUSTION%20project,pollution%20and%20identify%20adaptation%20strategies) EU funded [project](https://cordis.europa.eu/project/id/820655). There was a [tweet](https://twitter.com/cinea_eu/status/1759871919476576732?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1759871919476576732%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FC%3A%2FUsers%2FArturodelaCruz%2FOneDrive20-20London20School20of20Hygiene20and20Tropical20Medicine%2FAreas%2FRDrive%2Fpages_and_apps%2FAdlCruz.github.io%2Findex.html)
 
-[**hipmapp**](https://ehm-lab.github.io/hipmapp/) **is a health impact projection mapping dashboard** developed within the broader [EXHAUSTION](https://climate-adapt.eea.europa.eu/en/metadata/publications/exhaustion-white-paper-exposure-to-heat-and-air-pollution-in-europe#:~:text=The%20EU%2Dfunded%20EXHAUSTION%20project,pollution%20and%20identify%20adaptation%20strategies) EU funded [project](https://cordis.europa.eu/project/id/820655), and omg it got tweeted as well wow look at that
+###### rctapi and rctexplorer (2021) {#rctgovPakcs}
 
-<blockquote class="twitter-tweet">
+[rctapi](https://adlcruz.github.io/rctapi/) + [rctexplorer](https://adlcruz.github.io/rctexplorer/) for R based interaction with the clinicaltrials.gov online database Use these two to search filter and download records from the website and load data to an app for interactive visualisation. Feel free to use/copy/improve on the [source code](https://github.com/AdlCruz/rctapi).
 
-<p lang="en" dir="ltr">
-
-<a href="https://twitter.com/hashtag/ProjectHighlight?src=hash&amp;ref_src=twsrc%5Etfw">#ProjectHighlight</a><a href="https://twitter.com/ExhaustionH2020?ref_src=twsrc%5Etfw">@ExhaustionH2020</a> project has come to an end. <br>Check their interactive tool on how climate change will affect human lives in urban settings 👉 <a href="https://t.co/czUSmjnfts">https://t.co/czUSmjnfts</a><a href="https://twitter.com/hashtag/H2020?src=hash&amp;ref_src=twsrc%5Etfw">#H2020</a> <a href="https://twitter.com/hashtag/Climate?src=hash&amp;ref_src=twsrc%5Etfw">#Climate</a> <a href="https://twitter.com/hashtag/EU?src=hash&amp;ref_src=twsrc%5Etfw">#EU</a> <a href="https://twitter.com/hashtag/Research?src=hash&amp;ref_src=twsrc%5Etfw">#Research</a> <a href="https://twitter.com/hashtag/ResearchImpactEU?src=hash&amp;ref_src=twsrc%5Etfw">#ResearchImpactEU</a> <a href="https://t.co/GECEyd86kl">pic.twitter.com/GECEyd86kl</a>
-
-</p>
-
-— CINEA🇪🇺 (@cinea_eu) <a href="https://twitter.com/cinea_eu/status/1759871919476576732?ref_src=twsrc%5Etfw">February 20, 2024</a>
-
-</blockquote>
-
-```{=html}
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-```
-*moving on*
-
-# "Student" projects
-
-[**rctapi**](https://adlcruz.github.io/rctapi/) **+ [rctexplorer](https://adlcruz.github.io/rctexplorer/) for R based interaction with the clinicaltrials.gov online database** Use these two to search filter and download records from the website and load data to an app for interactive visualisation. Feel free to use/copy/improve on the [source code](https://github.com/AdlCruz/rctapi).
-
-[Project report and use-case](assets/deanonlshtmdiss.pdf)\
+[Report and use-case.](assets/deanonlshtmdiss.pdf)\
 
 Presented at the local R Users Group meeting [from 8:07]((https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0)), [pdf](linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf), [video demo](https://player.vimeo.com/video/595343322?h=97da0c4bb5).
 
-The MSc in Health Data Science at the London School of Hygiene and Tropical Medicine (2020-2021) was special. Not only were we the first cohort but we did it all without ever setting foot in the same building. The highlight of the year for me was the Data Challenge module which consisted of small teams taking on one large project each at the request of various stakeholders. 
-I was lucky enough to team-up with some excellent individuals and together we worked on a pressing issue for the Royal College of Surgeons. This topic still comes up in the news at the time of writing so I believe we were among the first to investigate this. Our final presentation and full report below.
+###### Immediate and projected impact of Covid-19 on NHS cancer waiting time pathways (2021)
 
 [Presentation](https://docs.google.com/presentation/d/1hhb2Vdc4sjZ0h_he6wof5eFAbhWj-NQB/edit#slide=id.p4)
 
 [Report](assets/datachallengeReport.pdf)
 
+The [MSc in Health Data Science](https://www.lshtm.ac.uk/study/courses/masters-degrees/health-data-science) at the London School of Hygiene and Tropical Medicine (2020-2021) was special. Not only were we the first cohort but we did it all without ever setting foot in the same building. The highlight of the year for me was the Data Challenge module which consisted of small teams taking on one large project each at the request of various stakeholders. I was lucky enough to team-up with some excellent individuals and together we worked on a pressing issue for the Royal College of Surgeons.
 
 # Presented
 
-- ISEE Young in Rennes (coming soon)  
-<!-- [classic oral presentation](assets/adlcruz_ISEEYoung_Rennes_June2024.pdf) 5 - 7 June 2024 -->
+-   ISEE Young, Rennes, June 2024, classic oral presentation: [slides](assets/adlcruz_ISEEYoung_Rennes_June2024.pdf)
 
--   Turing Climate Informatics <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_turingcliminf_2024/poster_turingcliminf_refs_adlcl.pdf" target="_blank"> references </a> - 23-04-2024
+-   Turing Climate Informatics, London, April 2024, poster presentation: [poster](assets/poster_turingcliminf_2024/poster_turingcliminf_adlcl.pdf)
 
--   DASH Centre Launch <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_adlcl.pdf" target="_blank"> poster </a> and <a href="assets/poster_dashlaunch_2024/poster_dashlaunch_refs_adlcl.pdf" target="_blank"> references </a> - 26-03-2024
+# Courses
 
--   environmental epidemiology module <a href="linked_content/pres_bigdataenvepi_2024/bdee_slides.html" target="_blank">lecture slides</a> big data in environmental epidemiology - 14-03-2024
+-   [Summer School 2023: “Processing and visualizing large geospatial data using R, Python and Julia”](https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/) 28 August - 1 September 2023
 
--   LSHTM R Users Group <a href="linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf" target="_blank"> R packages presentation </a> - 18-11-2022
-
-# Attended
-
-- [Summer School 2023: “Processing and visualizing large geospatial data using R, Python and Julia”](https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/) 28 August - 1 September 2023
-
-- [Modern time series methods for public health and epidemiology (5 days course)](https://www.eepe.org/specialized-1-week-courses/) 8-12 July 2022
+-   [Modern time series methods for public health and epidemiology (5 days course)](https://www.eepe.org/specialized-1-week-courses/) 8-12 July 2022
 
 # Location
 
 Madrid, Varese, London.
 
-# Interest
+# Interests
 
--   Predictive modelling, Exposure assessment, Epidemiology
+-   My research areas
 -   Neuroscience, Hiking, Sci-fi, Meadows, Orcas, Volleyball, Mountains, ...
 
 # Unclassified
