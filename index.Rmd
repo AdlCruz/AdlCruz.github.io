@@ -48,9 +48,7 @@ Presented at the local R Users Group meeting [from 8:07]((https://lshtm.cloud.pa
 
 ###### Immediate and projected impact of Covid-19 on NHS cancer waiting time pathways (2021)
 
-[Presentation](https://docs.google.com/presentation/d/1hhb2Vdc4sjZ0h_he6wof5eFAbhWj-NQB/edit#slide=id.p4)
-
-[Report](assets/datachallengeReport.pdf)
+[Report](assets/datachallengeReport.pdf) and [Presentation](https://docs.google.com/presentation/d/1hhb2Vdc4sjZ0h_he6wof5eFAbhWj-NQB/edit#slide=id.p4)
 
 The [MSc in Health Data Science](https://www.lshtm.ac.uk/study/courses/masters-degrees/health-data-science) at the London School of Hygiene and Tropical Medicine (2020-2021) was special. Not only were we the first cohort but we did it all without ever setting foot in the same building. The highlight of the year for me was the Data Challenge module which consisted of small teams taking on one large project each at the request of various stakeholders. I was lucky enough to team-up with some excellent individuals and together we worked on a pressing issue for the Royal College of Surgeons.
 
@@ -60,7 +58,7 @@ The [MSc in Health Data Science](https://www.lshtm.ac.uk/study/courses/masters-d
 
 -   Turing Climate Informatics, London, April 2024, poster presentation: [poster](assets/poster_turingcliminf_2024/poster_turingcliminf_adlcl.pdf)
 
-# Courses
+# Courses attended
 
 -   [Summer School 2023: “Processing and visualizing large geospatial data using R, Python and Julia”](https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/) 28 August - 1 September 2023
 
@@ -75,6 +73,9 @@ Madrid, Varese, London.
 -   My research areas
 -   Neuroscience, Hiking, Sci-fi, Meadows, Orcas, Volleyball, Mountains, ...
 
-# Unclassified
+# Other things
+
+[Big data in environmental epidemiology lecture slides](linked_content/pres_bigdataenvepi_2024/bdee_slides.html).
 
 [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](assets/lrpbsckcl.pdf).
+
