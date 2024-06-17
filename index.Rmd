@@ -38,7 +38,7 @@ htmltools::HTML("<hr>")
 
 [hipmapp](https://ehm-lab.github.io/hipmapp/) is a [climate impact projections tool](https://climate-adapt.eea.europa.eu/en/metadata/tools/exhaustion-health-impact-projections-tool) developed as a subdeliverable of [EXHAUSTION](https://climate-adapt.eea.europa.eu/en/metadata/publications/exhaustion-white-paper-exposure-to-heat-and-air-pollution-in-europe#:~:text=The%20EU%2Dfunded%20EXHAUSTION%20project,pollution%20and%20identify%20adaptation%20strategies) EU funded [project](https://cordis.europa.eu/project/id/820655). There was a [tweet](https://twitter.com/cinea_eu/status/1759871919476576732?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1759871919476576732%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FC%3A%2FUsers%2FArturodelaCruz%2FOneDrive20-20London20School20of20Hygiene20and20Tropical20Medicine%2FAreas%2FRDrive%2Fpages_and_apps%2FAdlCruz.github.io%2Findex.html)
 
-###### rctapi and rctexplorer (2021) {#rctgovPakcs}
+###### rctapi and rctexplorer (2021) {#rctgovPacks}
 
 [rctapi](https://adlcruz.github.io/rctapi/) + [rctexplorer](https://adlcruz.github.io/rctexplorer/) for R based interaction with the clinicaltrials.gov online database Use these two to search filter and download records from the website and load data to an app for interactive visualisation. Feel free to use/copy/improve on the [source code](https://github.com/AdlCruz/rctapi).
 
