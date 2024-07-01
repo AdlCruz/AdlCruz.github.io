@@ -11,7 +11,7 @@ body {
 /* Headings with a funky twist */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Yanone Kaffeesatz", "Merriweather", sans-serif;
-  font-size: 1.6em;
+  /* font-size: 1.6em; */
   margin-top: 20px;
 }
 

@@ -14,50 +14,50 @@ library(rmarkdown);library(markdown);library(htmltools)
 htmltools::HTML("<hr>")
 ```
 
-Work and study in the [*EHM Lab*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab) at the [London School of Hygiene and Tropical Medicine](https://www.lshtm.ac.uk).  
+Work and study in the [*EHM Lab*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab) at the [London School of Hygiene and Tropical Medicine](https://www.lshtm.ac.uk).\
 Focus: modelling airborne pollutants for exposure assessment and epidemiological research.
 
-[Profile](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo) | [Publications](https://orcid.org/0009-0001-1543-7999) | [GitHub](https://github.com/AdlCruz "Code")
+[Profile](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo) \| [Publications](https://orcid.org/0009-0001-1543-7999) \| [GitHub](https://github.com/AdlCruz "Code")
 
 ```{r}
 htmltools::HTML("<hr>")
 ```
 
-###### Projects  
-[**Mapping temperature-related mortality  projections for 800+ European cities**](https://ehm-lab.github.io/hipmapp/)  
-[App](https://ehm-lab.shinyapps.io/hipmapp/) | [Description](https://climate-adapt.eea.europa.eu/en/metadata/tools/exhaustion-health-impact-projections-tool) | [Parent](https://cordis.europa.eu/project/id/820655) | [Tweet](https://twitter.com/cinea_eu/status/1759871919476576732?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1759871919476576732%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FC%3A%2FUsers%2FArturodelaCruz%2FOneDrive20-20London20School20of20Hygiene20and20Tropical20Medicine%2FAreas%2FRDrive%2Fpages_and_apps%2FAdlCruz.github.io%2Findex.html)
+### Projects
 
-[**Enabling search, filter, download (rctapi),**](https://adlcruz.github.io/rctapi/) [**and interactive exploration (rctexplorer) including of potential treatment networks from**](https://adlcruz.github.io/rctexplorer/) [**a (very) large clinical trial registry**](https://clinicaltrials.gov/)  
-[Report and use-case](assets/deanonlshtmdiss.pdf) | [RUG presentation (from 8:076)](https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0) [(pdf)](linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf)
+[**Mapping temperature-related mortality projections for 800+ European cities**](https://ehm-lab.github.io/hipmapp/) **(2023)**\
+[App](https://ehm-lab.shinyapps.io/hipmapp/) \| [Description](https://climate-adapt.eea.europa.eu/en/metadata/tools/exhaustion-health-impact-projections-tool) \| [Parent](https://cordis.europa.eu/project/id/820655) \| [Tweet](https://twitter.com/cinea_eu/status/1759871919476576732?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1759871919476576732%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=file%3A%2F%2F%2FC%3A%2FUsers%2FArturodelaCruz%2FOneDrive20-20London20School20of20Hygiene20and20Tropical20Medicine%2FAreas%2FRDrive%2Fpages_and_apps%2FAdlCruz.github.io%2Findex.html)
 
-<details> <summary> **Immediate and projected impact of Covid-19 on NHS cancer waiting time pathways (2021)** </summary> The [MSc in Health Data Science](https://www.lshtm.ac.uk/study/courses/masters-degrees/health-data-science) at the London School of Hygiene and Tropical Medicine (2020-2021) was special. Not only were we the first cohort but we all did it all without ever setting foot in the same building. The highlight of the year for me was the Data Challenge module which consisted of small teams taking on one large project each, at the request of various stakeholders. I was lucky enough to team-up with some excellent individuals and together we worked on a pressing issue for the Royal College of Surgeons. The Covid-19 pandemic impacted all areas of life including the so-called cancer waiting time pathways. These are set target-times to allocate appointments for individuals with any indications of cancer no matter how small such as a palate discolouration or a lump. Our team investigated the extent of the impact, how many patients were missing the targets and how many more were expected to do so in the near future. </details>  
+[**Enabling search, filter, download (rctapi),**](https://adlcruz.github.io/rctapi/) [**and interactive exploration (rctexplorer) including of potential treatment networks from**](https://adlcruz.github.io/rctexplorer/) [**a (very) large clinical trial registry** ](https://clinicaltrials.gov/) **(2021)**\
+[Report and use-case](assets/deanonlshtmdiss.pdf) \| [RUG presentation (from 8:076)](https://lshtm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ae0141e-9685-4db2-a75f-af5400c191d0) [(pdf)](linked_content/pres_RUGrctpkgs_2022/RUG_18Nov22_rct_presentation.pdf)
+
+[**Immediate and projected impact of Covid-19 on NHS cancer waiting time pathways**](page_datachallenge.html) **(2021)**  
 [Report](assets/datachallengeReport.pdf) | [Presentation](https://docs.google.com/presentation/d/1hhb2Vdc4sjZ0h_he6wof5eFAbhWj-NQB/edit#slide=id.p4)
 
-###### Presented
+### Presented
 
--   ISEE Young, Rennes, June 2024, classic oral presentation: [slides](assets/adlcruz_ISEEYoung_Rennes_June2024.pdf)  
+-   ISEE Young, Rennes, June 2024, classic oral presentation: [slides](assets/adlcruz_ISEEYoung_Rennes_June2024.pdf)\
 -   Turing Climate Informatics, London, April 2024, poster presentation: [poster](assets/poster_turingcliminf_2024/poster_turingcliminf_adlcl.pdf)
 
-###### Courses attended
+### Courses attended
 
--   [Summer School 2023: “Processing and visualizing large geospatial data using R, Python and Julia”](https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/) 28 August - 1 September 2023  
+-   [Summer School 2023: “Processing and visualizing large geospatial data using R, Python and Julia”](https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/) 28 August - 1 September 2023\
 -   [Modern time series methods for public health and epidemiology (5 days course)](https://www.eepe.org/specialized-1-week-courses/) 8-12 July 2022
 
-# Location
+### Location
 
-Madrid, Varese, London.
+London, Varese, Madrid.
 
-# Interests
+### Interests
 
 -   My research areas
 -   R, Neuroscience, Hiking, Sci-fi, Meadows, Orcas, Volleyball, Mountains, ...
 
-# More non-personal things
+### Other linked content
 
-[Big data in environmental epidemiology lecture slides](linked_content/pres_bigdataenvepi_2024/bdee_slides.html).  
+[Big data in environmental epidemiology lecture slides](linked_content/pres_bigdataenvepi_2024/bdee_slides.html).\
 [The Role of Dopamine and Dopamine Receptor Signalling in Basal Ganglia-Mediated Action Selection](assets/lrpbsckcl.pdf).
 
-# this is the end of the page
+### this is the end of the page
 
-for your persistence you are rewarded with the option to spend as much time as you want reading a few of the book reviews, stories, and other odd things I have written in the past 20 or so years, they are in this blog I very humbly called [Lanterns of Glory](https://cruzadl.github.io/), don't waste your time :)
-
+for your persistence you are rewarded with the option to spend as much time as you want reading a few of the book reviews, stories, and other odd things I have written in the past 20 or so years in this humbly named [blog](https://cruzadl.github.io/), don't waste your time :)
