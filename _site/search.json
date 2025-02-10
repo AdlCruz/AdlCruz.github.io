@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Arturo de la Cruz Libardi",
+    "section": "",
+    "text": "Arturo de la Cruz Libardi\n\n\n\n\n\n\nWork and study in the EHM Lab at the London School of Hygiene and Tropical Medicine.\nFocus: modelling airborne pollutants for exposure assessment and epidemiological research.\n\n\n\n\n\n\nFor more, this is my institutional profile.\nMy ORCID with publications and collaborations.\nAnd my personal and EHM-Lab GitHub, where the code lives.\n\n\n\n\n\n\nOther Interests\n\nR, Neuroscience, Hiking, Sci-fi, Meadows, Interesting Words, Orcas, Volleyball, Mountains, …\n\nFeel free to reach out to me to chat about any of the above :)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "rcode.html",
+    "href": "rcode.html",
+    "title": "pro_site",
+    "section": "",
+    "text": "Repository\nAbout\nTopic\nLast Push\nDOI\nStars\nForks\nDescription\n\n\n\n\nehm-lab.github.io\nEHM-Lab resources site\nhome\n2024-01-25T16:53:36Z\nNA\n0\n0\nNA\n\n\nEnvExpLink\nSample code for environment and residential data linkage\ntutorial\n2025-01-30T07:24:47Z\n10.1038/s41370-023-00635-w\n0\n2\nReconstructing individual-level exposures in cohort analyses of environmental risks: an example with the UK Biobank Sample code for environment and residential data linkage This repository stores the updated R code to reproduce a simpler …\n\n\nEUcityProj\n\npaper-code\n2025-01-30T16:36:49Z\n10.1038/s41591-024-03452-2\n0\n0\nEUcityProj DOI Fully replicable code performing the health impact projections reported in the paper Masselot, P., Mistry, M.N., Rao, S. et al. Estimating future heat-related and cold-related mortality under climate change, demographic an…\n\n\nEUcityProj-app\nCompanion shiny-app to Masselot et al. (2025)\nshiny-app\n2025-01-31T10:42:26Z\n10.1038/s41591-024-03452-2\n0\n0\nShiny-app to visualise the results of Masselot et al. (2025) This web-app lets you explore the projection results using an interactive map and table. The map shows how projected mortality outcomes vary across different locations. You can l…\n\n\nhipmapp\nThis repository serves a shiny app and a dataset developed as part of the EU H2020 funded EXHAUSTION project.\nshiny-app\n2024-11-11T14:49:24Z\nNA\n0\n0\nHealth Impact Projections Map App This app reports projections of temperature-related mortality until the end of the century for 854 cities in 30 European countries. DOI Developed and funded as part of the EU H2020 EXHAUSTION project. F…\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "proj_cwt.html",
+    "href": "proj_cwt.html",
+    "title": "pro_site",
+    "section": "",
+    "text": "Warning: package 'rmarkdown' was built under R version 4.4.2\n\n\nWarning: package 'markdown' was built under R version 4.4.2\n\n\n\n\n\n\n\n\nImmediate and projected impact of Covid-19 on NHS cancer waiting time pathways (2021)\nThe MSc in Health Data Science at the London School of Hygiene and Tropical Medicine (2020-2021) was special. Not only were we the first cohort but we all did it all without ever setting foot in the same building. The highlight of the year for me was the Data Challenge module which consisted of small teams taking on one large project each, at the request of various stakeholders. I was lucky enough to team-up with some excellent individuals and together we worked on a pressing issue for the Royal College of Surgeons. The Covid-19 pandemic impacted all areas of life including the so-called cancer waiting time pathways (there have been some changes to these targets since then). These are set target-times to allocate appointments for individuals with any indications of cancer no matter how small such as a discolourated spot or a lump. Our team investigated the extent of the impact, how many patients were missing the targets and how many more were expected to do so in the near future.\nWe wrote an extended report and presented our findings to the stakeholders.\n\n\n\n\n Back to top"
+  }
+]

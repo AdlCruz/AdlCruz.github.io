@@ -1,0 +1,17 @@
+{
+  "hash": "625f1c24dae15f4232fd672afa7dc225",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\npagetitle: \"title\"\ntitle: \"\"\ntoc: false\nlightbox: true\n---\n\n::: {.cell}\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'rmarkdown' was built under R version 4.4.2\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'markdown' was built under R version 4.4.2\n```\n\n\n:::\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<hr>\n```\n\n:::\n:::\n\n\n### Immediate and projected impact of Covid-19 on NHS cancer waiting time pathways (2021)\n\nThe [MSc in Health Data Science](https://www.lshtm.ac.uk/study/courses/masters-degrees/health-data-science) at the London School of Hygiene and Tropical Medicine (2020-2021) was special. Not only were we the first cohort but we all did it all without ever setting foot in the same building. The highlight of the year for me was the Data Challenge module which consisted of small teams taking on one large project each, at the request of various stakeholders. I was lucky enough to team-up with some excellent individuals and together we worked on a pressing issue for the Royal College of Surgeons. The Covid-19 pandemic impacted all areas of life including the so-called [cancer waiting time pathways](https://www.cancerresearchuk.org/about-cancer/worried-about-cancer/cancer-waiting-times#:~:text=The%20target%20is%20that%20you,their%20GP%20for%20suspected%20cancer) (there have been [some changes](https://www.cancerresearchuk.org/about-cancer/worried-about-cancer/cancer-waiting-times#:~:text=The%20target%20is%20that%20you,their%20GP%20for%20suspected%20cancer) to these targets since then). These are set target-times to allocate appointments for individuals with any indications of cancer no matter how small such as a discolourated spot or a lump. Our team investigated the extent of the impact, how many patients were missing the targets and how many more were expected to do so in the near future.\n\nWe wrote an extended [report](assets/datachallengeReport.pdf) and [presented](https://docs.google.com/presentation/d/1hhb2Vdc4sjZ0h_he6wof5eFAbhWj-NQB/edit#slide=id.p4) our findings to the stakeholders.",
+    "supporting": [
+      "proj_cwt_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

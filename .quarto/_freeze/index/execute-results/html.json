@@ -1,0 +1,15 @@
+{
+  "hash": "cc90d389b6b17bcaecb47e0e6c5c28f1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\npagetitile: \"\"\ntitle: \"\"\ntoc: false\nlightbox: true\n---\n\n# Arturo de la Cruz Libardi\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<hr>\n```\n\n:::\n:::\n\n\n>Work and study in the [*EHM Lab*](https://www.lshtm.ac.uk/research/centres-projects-groups/ehm-lab) at the [London School of Hygiene and Tropical Medicine](https://www.lshtm.ac.uk).  \n>Focus: modelling airborne pollutants for exposure assessment and epidemiological research.\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<hr>\n```\n\n:::\n:::\n\n\nFor more, this is my institutional [profile](https://www.lshtm.ac.uk/aboutus/people/de-la-cruz-libardi.arturo).  \nMy [ORCID](https://orcid.org/0009-0001-1543-7999) with publications and collaborations.  \nAnd my [personal](https://github.com/AdlCruz) and [EHM-Lab GitHub](https://github.com/ehm-lab), where the code lives.  \n\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<hr>\n```\n\n:::\n:::\n\n\n### Other Interests\n\n-   R, Neuroscience, Hiking, Sci-fi, Meadows, Interesting Words, Orcas, Volleyball, Mountains, ...\n\nFeel free to reach out to me to chat about any of the above :)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
