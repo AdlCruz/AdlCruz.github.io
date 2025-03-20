@@ -3,6 +3,7 @@ pagetitile: ""
 title: ""
 toc: false
 lightbox: true
+freeze: auto
 ---
 # Arturo de la Cruz Libardi
 
@@ -38,5 +39,3 @@ htmltools::HTML("<hr>")
 -   R, Neuroscience, Hiking, Sci-fi, Meadows, Interesting Words, Orcas, Volleyball, Mountains, ...
 
 Feel free to reach out to me to chat about any of the above :)
-
-[BDEE slides](assets/bdee/bdee_slides_2025.html)
