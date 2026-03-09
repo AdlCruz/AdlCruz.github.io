@@ -36,6 +36,7 @@ htmltools::HTML("<hr>")
 
 ### Other Interests
 
--   R, Neuroscience, Hiking, Sci-fi, Meadows, Interesting Words, Orcas, Volleyball, Mountains, ...
+-   R, Neuroscience, Algorithms and Attention, Sci-fi, Interesting Words
+-   Ultra-endurance running, Volleyball, Hiking, Meadows, Mountains, Orcas 
 
 Feel free to reach out to me to chat about any of the above :)
